@@ -35,3 +35,11 @@ A snapshot once the final testbench is executed on the BETA
 And finally don't forget to include this sticker on your beta processor ;)
 
 ![ISE snapshot](https://edxuploads.s3.amazonaws.com/14871047273282476.png)
+
+###The course staff gave me the permission to post this on my github
+
+>silvinahw (Staff)
+
+>AbdelrhmanElBehery: Nice work! It's great to see how many students are interested in taking their beta to the next level. You may post additional work that you do on this on github.
+
+
