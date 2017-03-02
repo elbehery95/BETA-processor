@@ -32,7 +32,7 @@ A snapshot once the final testbench is executed on the BETA
 
 ![ISE snapshot](https://edxuploads.s3.amazonaws.com/14884851958285753.png)
 
-And finally don't forget to include this sticker on your beta processor ;)
+And finally don't forget to include the beta inside sticker on your processor ;)
 
 ![ISE snapshot](https://edxuploads.s3.amazonaws.com/14871047273282476.png)
 
