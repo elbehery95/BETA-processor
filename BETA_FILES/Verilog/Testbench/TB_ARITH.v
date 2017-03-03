@@ -6,7 +6,7 @@
 //
 // Create Date:   00:26:11 02/10/2017
 // Design Name:   ARITH
-// Module Name:   F:/FPGA/Projects/BETA_ISE/TB_ARITH.v
+// Module Name:   F:/Self learning/FPGA/Projects/BETA_ISE/TB_ARITH.v
 // Project Name:  BETA_ISE
 // Target Device:  
 // Tool versions:  

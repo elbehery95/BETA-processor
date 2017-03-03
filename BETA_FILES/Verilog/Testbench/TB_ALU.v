@@ -6,7 +6,7 @@
 //
 // Create Date:   00:19:58 02/10/2017
 // Design Name:   ALU
-// Module Name:   F:/FPGA/Projects/BETA_ISE/TB_ALU.v
+// Module Name:   F:/Self learning/FPGA/Projects/BETA_ISE/TB_ALU.v
 // Project Name:  BETA_ISE
 // Target Device:  
 // Tool versions:  
