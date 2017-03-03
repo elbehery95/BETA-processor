@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+BETA_CORE instance_name (
+    .CLK(CLK), 
+    .RESET(RESET), 
+    .IRQ(IRQ), 
+    .MRD(MRD), 
+    .ID(ID), 
+    .IA(IA), 
+    .MA(MA), 
+    .MOE(MOE), 
+    .MWR(MWR), 
+    .MWD(MWD)
+    );
+
+

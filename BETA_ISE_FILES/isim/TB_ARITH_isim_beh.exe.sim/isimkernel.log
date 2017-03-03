@@ -1,0 +1,30 @@
+Command line:
+   TB_ARITH_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53881
+
+Sun Feb 12 18:13:00 2017
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 842.142 Meg
+
+ Total Signals          : 20
+ Total Nets             : 113
+ Total Signal Drivers   : 12
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 15
+ Total Traceable Variables  : 36
+ Total Scalar Nets and Variables : 428
+Total Line Count : 769
+Total Line Count : 769
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 842.142 Meg
+
+Sun Feb 12 18:13:08 2017
+

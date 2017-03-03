@@ -1,0 +1,2 @@
+verilog work "../REG_FILE_1/REGFILE.v"
+verilog work "../REG_FILE_1/TB.v"

@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+REGFILE instance_name (
+    .CLK(CLK), 
+    .RA2SEL(RA2SEL), 
+    .WASEL(WASEL), 
+    .WERF(WERF), 
+    .RA(RA), 
+    .RB(RB), 
+    .RC(RC), 
+    .WDATA(WDATA), 
+    .RADATA(RADATA), 
+    .RBDATA(RBDATA)
+    );
+
+

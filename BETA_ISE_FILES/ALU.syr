@@ -1,0 +1,394 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-csg324
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\SHIFT.v" into library work
+Parsing module <SHIFT>.
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\CMP.v" into library work
+Parsing module <CMP>.
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\BOOL.v" into library work
+Parsing module <BOOL>.
+WARNING:HDLCompiler:248 - "F:\Self learning\FPGA\Projects\BETA_ISE\BOOL.v" Line 31: Block identifier is required on this block
+Parsing module <MUX4>.
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\ARITH.v" into library work
+Parsing module <ARITH>.
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\ALU.v" into library work
+Parsing module <ALU>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ALU>.
+
+Elaborating module <SHIFT>.
+
+Elaborating module <BOOL>.
+
+Elaborating module <MUX4>.
+
+Elaborating module <ARITH>.
+
+Elaborating module <CMP>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ALU>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\ALU.v".
+    Found 32-bit 4-to-1 multiplexer for signal <Y> created at line 42.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <SHIFT>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\SHIFT.v".
+    Found 32-bit shifter logical left for signal <A[31]_B[4]_shift_left_0_OUT> created at line 30
+    Found 32-bit shifter logical right for signal <A[31]_B[4]_shift_right_1_OUT> created at line 31
+    Found 32-bit shifter arithmetic right for signal <A[31]_B[4]_shift_right_2_OUT> created at line 32
+    Found 32-bit 4-to-1 multiplexer for signal <Y> created at line 29.
+    Summary:
+	inferred   1 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <SHIFT> synthesized.
+
+Synthesizing Unit <BOOL>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\BOOL.v".
+    Summary:
+	no macro.
+Unit <BOOL> synthesized.
+
+Synthesizing Unit <MUX4>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\BOOL.v".
+    Found 1-bit 4-to-1 multiplexer for signal <OUT> created at line 42.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX4> synthesized.
+
+Synthesizing Unit <ARITH>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\ARITH.v".
+    Found 32-bit subtractor for signal <A[31]_B[31]_sub_6_OUT> created at line 45.
+    Found 32-bit adder for signal <A[31]_B[31]_add_4_OUT> created at line 43.
+    Found 1-bit comparator equal for signal <A[31]_B[31]_equal_1_o> created at line 32
+    Found 1-bit comparator not equal for signal <n0002> created at line 32
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <ARITH> synthesized.
+
+Synthesizing Unit <CMP>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\CMP.v".
+    Found 32-bit 4-to-1 multiplexer for signal <Y> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <CMP> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit addsub                                         : 1
+# Comparators                                          : 2
+ 1-bit comparator equal                                : 1
+ 1-bit comparator not equal                            : 1
+# Multiplexers                                         : 35
+ 1-bit 4-to-1 multiplexer                              : 32
+ 32-bit 4-to-1 multiplexer                             : 3
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit addsub                                         : 1
+# Comparators                                          : 2
+ 1-bit comparator equal                                : 1
+ 1-bit comparator not equal                            : 1
+# Multiplexers                                         : 35
+ 1-bit 4-to-1 multiplexer                              : 32
+ 32-bit 4-to-1 multiplexer                             : 3
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU, actual ratio is 8.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ALU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 409
+#      LUT2                        : 4
+#      LUT3                        : 68
+#      LUT4                        : 19
+#      LUT5                        : 69
+#      LUT6                        : 182
+#      MUXCY                       : 31
+#      MUXF7                       : 4
+#      XORCY                       : 32
+# IO Buffers                       : 105
+#      IBUF                        : 70
+#      OBUF                        : 35
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  342  out of   5720     5%  
+    Number used as Logic:               342  out of   5720     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    342
+   Number with an unused Flip Flop:     342  out of    342   100%  
+   Number with an unused LUT:             0  out of    342     0%  
+   Number of fully used LUT-FF pairs:     0  out of    342     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         105
+ Number of bonded IOBs:                 105  out of    200    52%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 12.030ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 9731 / 35
+-------------------------------------------------------------------------
+Delay:               12.030ns (Levels of Logic = 10)
+  Source:            FN<0> (PAD)
+  Destination:       Y<0> (PAD)
+
+  Data Path: FN<0> to Y<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           114   1.222   1.914  FN_0_IBUF (FN_0_IBUF)
+     LUT3:I2->O            1   0.205   0.000  arith_ckt/Maddsub_S_lut<0> (arith_ckt/Maddsub_S_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  arith_ckt/Maddsub_S_cy<0> (arith_ckt/Maddsub_S_cy<0>)
+     XORCY:CI->O           2   0.180   0.981  arith_ckt/Maddsub_S_xor<1> (arith_opt<1>)
+     LUT6:I0->O            1   0.203   0.944  arith_ckt/Z1 (arith_ckt/Z)
+     LUT6:I0->O            1   0.203   0.944  arith_ckt/Z2 (arith_ckt/Z1)
+     LUT6:I0->O            2   0.203   0.617  arith_ckt/Z7 (Z_OBUF)
+     LUT5:I4->O            1   0.205   0.684  Mmux_Y38 (Mmux_Y316)
+     LUT5:I3->O            1   0.203   0.579  Mmux_Y39 (Y_0_OBUF)
+     OBUF:I->O                 2.571          Y_0_OBUF (Y<0>)
+    ----------------------------------------
+    Total                     12.030ns (5.367ns logic, 6.663ns route)
+                                       (44.6% logic, 55.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.69 secs
+ 
+--> 
+
+Total memory usage is 278352 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

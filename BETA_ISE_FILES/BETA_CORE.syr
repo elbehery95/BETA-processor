@@ -1,0 +1,633 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: BETA_CORE.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BETA_CORE.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BETA_CORE"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-csg324
+
+---- Source Options
+Top Module Name                    : BETA_CORE
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\SHIFT.v" into library work
+Parsing module <SHIFT>.
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\ipcore_dir\SRAM32x32.v" into library work
+Parsing module <SRAM32x32>.
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\CMP.v" into library work
+Parsing module <CMP>.
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\BOOL.v" into library work
+Parsing module <BOOL>.
+WARNING:HDLCompiler:248 - "F:\Self learning\FPGA\Projects\BETA_ISE\BOOL.v" Line 31: Block identifier is required on this block
+Parsing module <MUX4>.
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\ARITH.v" into library work
+Parsing module <ARITH>.
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\REGFILE.v" into library work
+Parsing module <REGFILE>.
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\CTL.v" into library work
+Parsing module <CTL>.
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\BETA_ISE\BETA_CORE.v" into library work
+Parsing module <BETA_CORE>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "F:\Self learning\FPGA\Projects\BETA_ISE\BETA_CORE.v" Line 95: Port Z is not connected to this instance
+
+Elaborating module <BETA_CORE>.
+
+Elaborating module <CTL>.
+
+Elaborating module <REGFILE>.
+
+Elaborating module <SRAM32x32>.
+WARNING:HDLCompiler:1499 - "F:\Self learning\FPGA\Projects\BETA_ISE\ipcore_dir\SRAM32x32.v" Line 39: Empty module <SRAM32x32> remains a black box.
+
+Elaborating module <PC>.
+WARNING:HDLCompiler:413 - "F:\Self learning\FPGA\Projects\BETA_ISE\PC.v" Line 37: Result of 32-bit expression is truncated to fit in 31-bit target.
+WARNING:HDLCompiler:413 - "F:\Self learning\FPGA\Projects\BETA_ISE\PC.v" Line 40: Result of 32-bit expression is truncated to fit in 31-bit target.
+
+Elaborating module <ALU>.
+
+Elaborating module <SHIFT>.
+
+Elaborating module <BOOL>.
+
+Elaborating module <MUX4>.
+
+Elaborating module <ARITH>.
+
+Elaborating module <CMP>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <BETA_CORE>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\BETA_CORE.v".
+INFO:Xst:3210 - "F:\Self learning\FPGA\Projects\BETA_ISE\BETA_CORE.v" line 95: Output port <Z> of the instance <arithlog_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\Self learning\FPGA\Projects\BETA_ISE\BETA_CORE.v" line 95: Output port <V> of the instance <arithlog_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\Self learning\FPGA\Projects\BETA_ISE\BETA_CORE.v" line 95: Output port <N> of the instance <arithlog_unit> is unconnected or connected to loadless signal.
+    Found 32-bit 4-to-1 multiplexer for signal <regWriteData_i> created at line 111.
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <BETA_CORE> synthesized.
+
+Synthesizing Unit <CTL>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\CTL.v".
+    Summary:
+	inferred   6 Multiplexer(s).
+Unit <CTL> synthesized.
+
+Synthesizing Unit <REGFILE>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\REGFILE.v".
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <REGFILE> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\PC.v".
+WARNING:Xst:647 - Input <JT<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <PC<30>>.
+    Found 1-bit register for signal <PC<29>>.
+    Found 1-bit register for signal <PC<28>>.
+    Found 1-bit register for signal <PC<27>>.
+    Found 1-bit register for signal <PC<26>>.
+    Found 1-bit register for signal <PC<25>>.
+    Found 1-bit register for signal <PC<24>>.
+    Found 1-bit register for signal <PC<23>>.
+    Found 1-bit register for signal <PC<22>>.
+    Found 1-bit register for signal <PC<21>>.
+    Found 1-bit register for signal <PC<20>>.
+    Found 1-bit register for signal <PC<19>>.
+    Found 1-bit register for signal <PC<18>>.
+    Found 1-bit register for signal <PC<17>>.
+    Found 1-bit register for signal <PC<16>>.
+    Found 1-bit register for signal <PC<15>>.
+    Found 1-bit register for signal <PC<14>>.
+    Found 1-bit register for signal <PC<13>>.
+    Found 1-bit register for signal <PC<12>>.
+    Found 1-bit register for signal <PC<11>>.
+    Found 1-bit register for signal <PC<10>>.
+    Found 1-bit register for signal <PC<9>>.
+    Found 1-bit register for signal <PC<8>>.
+    Found 1-bit register for signal <PC<7>>.
+    Found 1-bit register for signal <PC<6>>.
+    Found 1-bit register for signal <PC<5>>.
+    Found 1-bit register for signal <PC<4>>.
+    Found 1-bit register for signal <PC<3>>.
+    Found 1-bit register for signal <PC<2>>.
+    Found 1-bit register for signal <PC<1>>.
+    Found 1-bit register for signal <PC<0>>.
+    Found 1-bit register for signal <PC<31>>.
+    Found 32-bit adder for signal <PC_INC> created at line 37.
+    Found 32-bit adder for signal <PC_OFFSET> created at line 40.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred 117 Multiplexer(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\ALU.v".
+    Found 32-bit 4-to-1 multiplexer for signal <Y> created at line 42.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <SHIFT>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\SHIFT.v".
+    Found 32-bit shifter logical left for signal <A[31]_B[4]_shift_left_0_OUT> created at line 30
+    Found 32-bit shifter logical right for signal <A[31]_B[4]_shift_right_1_OUT> created at line 31
+    Found 32-bit shifter arithmetic right for signal <A[31]_B[4]_shift_right_2_OUT> created at line 32
+    Found 32-bit 4-to-1 multiplexer for signal <Y> created at line 29.
+    Summary:
+	inferred   1 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <SHIFT> synthesized.
+
+Synthesizing Unit <BOOL>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\BOOL.v".
+    Summary:
+	no macro.
+Unit <BOOL> synthesized.
+
+Synthesizing Unit <MUX4>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\BOOL.v".
+    Found 1-bit 4-to-1 multiplexer for signal <OUT> created at line 42.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX4> synthesized.
+
+Synthesizing Unit <ARITH>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\ARITH.v".
+    Found 32-bit subtractor for signal <A[31]_B[31]_sub_6_OUT> created at line 45.
+    Found 32-bit adder for signal <A[31]_B[31]_add_4_OUT> created at line 43.
+    Found 1-bit comparator equal for signal <A[31]_B[31]_equal_1_o> created at line 32
+    Found 1-bit comparator not equal for signal <n0002> created at line 32
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <ARITH> synthesized.
+
+Synthesizing Unit <CMP>.
+    Related source file is "F:\Self learning\FPGA\Projects\BETA_ISE\CMP.v".
+    Found 32-bit 4-to-1 multiplexer for signal <Y> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <CMP> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 32
+ 1-bit register                                        : 32
+# Comparators                                          : 2
+ 1-bit comparator equal                                : 1
+ 1-bit comparator not equal                            : 1
+# Multiplexers                                         : 165
+ 1-bit 2-to-1 multiplexer                              : 121
+ 1-bit 4-to-1 multiplexer                              : 32
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 4
+ 32-bit 4-to-1 multiplexer                             : 4
+ 5-bit 2-to-1 multiplexer                              : 2
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/SRAM32x32.ngc>.
+Loading core <SRAM32x32> for timing and area information for instance <A>.
+Loading core <SRAM32x32> for timing and area information for instance <B>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 31-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Comparators                                          : 2
+ 1-bit comparator equal                                : 1
+ 1-bit comparator not equal                            : 1
+# Multiplexers                                         : 165
+ 1-bit 2-to-1 multiplexer                              : 121
+ 1-bit 4-to-1 multiplexer                              : 32
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 4
+ 32-bit 4-to-1 multiplexer                             : 4
+ 5-bit 2-to-1 multiplexer                              : 2
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <PC_1> (without init value) has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PC_0> (without init value) has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <BETA_CORE> ...
+
+Optimizing unit <REGFILE> ...
+
+Optimizing unit <PC> ...
+
+Optimizing unit <CTL> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BETA_CORE, actual ratio is 12.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : BETA_CORE.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1086
+#      GND                         : 3
+#      INV                         : 1
+#      LUT1                        : 28
+#      LUT2                        : 40
+#      LUT3                        : 40
+#      LUT4                        : 79
+#      LUT5                        : 118
+#      LUT6                        : 567
+#      MUXCY                       : 87
+#      MUXF7                       : 30
+#      VCC                         : 3
+#      XORCY                       : 90
+# FlipFlops/Latches                : 30
+#      FDR                         : 29
+#      FDSE                        : 1
+# RAMS                             : 2
+#      RAMB8BWER                   : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 164
+#      IBUF                        : 66
+#      OBUF                        : 98
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              30  out of  11440     0%  
+ Number of Slice LUTs:                  873  out of   5720    15%  
+    Number used as Logic:               873  out of   5720    15%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    873
+   Number with an unused Flip Flop:     843  out of    873    96%  
+   Number with an unused LUT:             0  out of    873     0%  
+   Number of fully used LUT-FF pairs:    30  out of    873     3%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                         165
+ Number of bonded IOBs:                 165  out of    200    82%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 32    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 9.571ns (Maximum Frequency: 104.487MHz)
+   Minimum input arrival time before clock: 11.603ns
+   Maximum output required time after clock: 11.906ns
+   Maximum combinational path delay: 14.078ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 9.571ns (frequency: 104.487MHz)
+  Total number of paths / destination ports: 1869151 / 113
+-------------------------------------------------------------------------
+Delay:               9.571ns (Levels of Logic = 14)
+  Source:            prog_counter/PC_2 (FF)
+  Destination:       rf/B/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram (RAM)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: prog_counter/PC_2 to rf/B/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.616  prog_counter/PC_2 (prog_counter/PC_2)
+     INV:I->O              1   0.206   0.000  prog_counter/Madd_PC_INC_Madd_lut<2>_INV_0 (prog_counter/Madd_PC_INC_Madd_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  prog_counter/Madd_PC_INC_Madd_cy<2> (prog_counter/Madd_PC_INC_Madd_cy<2>)
+     XORCY:CI->O           4   0.180   0.684  prog_counter/Madd_PC_INC_Madd_xor<3> (pcInc_i<3>)
+     LUT2:I1->O            1   0.205   0.000  prog_counter/Madd_PC_OFFSET_Madd_lut<3> (prog_counter/Madd_PC_OFFSET_Madd_lut<3>)
+     MUXCY:S->O            1   0.172   0.000  prog_counter/Madd_PC_OFFSET_Madd_cy<3> (prog_counter/Madd_PC_OFFSET_Madd_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  prog_counter/Madd_PC_OFFSET_Madd_cy<4> (prog_counter/Madd_PC_OFFSET_Madd_cy<4>)
+     XORCY:CI->O           7   0.180   0.774  prog_counter/Madd_PC_OFFSET_Madd_xor<5> (pcOffset_i<5>)
+     LUT4:I3->O            6   0.205   0.973  Mmux_aluA_i281 (aluA_i<5>)
+     LUT6:I3->O            6   0.205   0.849  Sh71 (Sh7)
+     LUT6:I4->O            3   0.203   0.651  Sh471 (Sh47)
+     LUT6:I5->O            1   0.205   0.684  arithlog_unit/Mmux_Y514_SW0 (N63)
+     LUT6:I4->O            2   0.203   0.617  arithlog_unit/Mmux_Y515 (arithlog_unit/Mmux_Y514)
+     LUT5:I4->O            2   0.205   0.616  Mmux_regWriteData_i251 (regWriteData_i<31>)
+     begin scope: 'rf/B:dina<31>'
+     RAMB8BWER:DIBDI15         0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+    ----------------------------------------
+    Total                      9.571ns (3.107ns logic, 6.464ns route)
+                                       (32.5% logic, 67.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 370923 / 153
+-------------------------------------------------------------------------
+Offset:              11.603ns (Levels of Logic = 9)
+  Source:            ID<31> (PAD)
+  Destination:       rf/B/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram (RAM)
+  Destination Clock: CLK rising
+
+  Data Path: ID<31> to rf/B/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   1.222   1.394  ID_31_IBUF (ID_31_IBUF)
+     LUT5:I0->O          112   0.203   2.137  control_unit/ALUFN<6>1 (alufn_i<0>)
+     LUT3:I0->O           11   0.205   1.111  arithlog_unit/Mmux_Y271111 (arithlog_unit/Mmux_Y162)
+     LUT5:I2->O           17   0.205   1.132  arithlog_unit/Mmux_Y27111 (arithlog_unit/Mmux_Y2711)
+     LUT5:I3->O            3   0.203   0.755  arithlog_unit/Mmux_Y273 (arithlog_unit/Mmux_Y272)
+     LUT6:I4->O            1   0.203   0.827  arithlog_unit/Mmux_Y276_SW2 (N203)
+     LUT6:I2->O            1   0.203   0.684  arithlog_unit/Mmux_Y278_SW2 (N157)
+     LUT6:I4->O            2   0.203   0.616  Mmux_regWriteData_i131 (regWriteData_i<20>)
+     begin scope: 'rf/B:dina<20>'
+     RAMB8BWER:DIBDI4          0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.WIDE_PRIM9.ram
+    ----------------------------------------
+    Total                     11.603ns (2.947ns logic, 8.656ns route)
+                                       (25.4% logic, 74.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 753162 / 95
+-------------------------------------------------------------------------
+Offset:              11.906ns (Levels of Logic = 14)
+  Source:            prog_counter/PC_2 (FF)
+  Destination:       MA<31> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: prog_counter/PC_2 to MA<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.616  prog_counter/PC_2 (prog_counter/PC_2)
+     INV:I->O              1   0.206   0.000  prog_counter/Madd_PC_INC_Madd_lut<2>_INV_0 (prog_counter/Madd_PC_INC_Madd_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  prog_counter/Madd_PC_INC_Madd_cy<2> (prog_counter/Madd_PC_INC_Madd_cy<2>)
+     XORCY:CI->O           4   0.180   0.684  prog_counter/Madd_PC_INC_Madd_xor<3> (pcInc_i<3>)
+     LUT2:I1->O            1   0.205   0.000  prog_counter/Madd_PC_OFFSET_Madd_lut<3> (prog_counter/Madd_PC_OFFSET_Madd_lut<3>)
+     MUXCY:S->O            1   0.172   0.000  prog_counter/Madd_PC_OFFSET_Madd_cy<3> (prog_counter/Madd_PC_OFFSET_Madd_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  prog_counter/Madd_PC_OFFSET_Madd_cy<4> (prog_counter/Madd_PC_OFFSET_Madd_cy<4>)
+     XORCY:CI->O           7   0.180   0.774  prog_counter/Madd_PC_OFFSET_Madd_xor<5> (pcOffset_i<5>)
+     LUT4:I3->O            6   0.205   0.973  Mmux_aluA_i281 (aluA_i<5>)
+     LUT6:I3->O            6   0.205   0.849  Sh71 (Sh7)
+     LUT6:I4->O            3   0.203   0.651  Sh471 (Sh47)
+     LUT6:I5->O            1   0.205   0.684  arithlog_unit/Mmux_Y514_SW0 (N63)
+     LUT6:I4->O            2   0.203   0.721  arithlog_unit/Mmux_Y515 (arithlog_unit/Mmux_Y514)
+     LUT5:I3->O            1   0.203   0.579  arithlog_unit/Mmux_Y516 (MA_31_OBUF)
+     OBUF:I->O                 2.571          MA_31_OBUF (MA<31>)
+    ----------------------------------------
+    Total                     11.906ns (5.376ns logic, 6.530ns route)
+                                       (45.2% logic, 54.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 141337 / 66
+-------------------------------------------------------------------------
+Delay:               14.078ns (Levels of Logic = 9)
+  Source:            ID<15> (PAD)
+  Destination:       MA<18> (PAD)
+
+  Data Path: ID<15> to MA<18>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            41   1.222   1.648  ID_15_IBUF (ID_15_IBUF)
+     LUT5:I2->O           73   0.205   1.947  rf/RA2SEL_PWR_3_o_equal_5_o<4>2 (rf/RA2SEL_PWR_3_o_equal_5_o<4>1)
+     LUT6:I2->O           35   0.203   1.582  Mmux_aluB_i121_2 (Mmux_aluB_i1211)
+     LUT5:I1->O            2   0.203   0.617  Sh1221_SW0 (N317)
+     LUT6:I5->O            8   0.205   0.803  Sh1221 (Sh122)
+     LUT6:I5->O            2   0.205   0.721  Sh2421 (Sh242)
+     LUT6:I4->O            2   0.203   0.961  arithlog_unit/Mmux_Y215 (arithlog_unit/Mmux_Y214)
+     LUT6:I1->O            1   0.203   0.579  arithlog_unit/Mmux_Y216 (MA_18_OBUF)
+     OBUF:I->O                 2.571          MA_18_OBUF (MA<18>)
+    ----------------------------------------
+    Total                     14.078ns (5.220ns logic, 8.858ns route)
+                                       (37.1% logic, 62.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    9.571|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.88 secs
+ 
+--> 
+
+Total memory usage is 295672 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

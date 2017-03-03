@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj BETA_ISE -o "F:/Self learning/FPGA/Projects/BETA_ISE/CTL.tfi" -lib work "F:/Self learning/FPGA/Projects/BETA_ISE//CTL.v" -module CTL -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

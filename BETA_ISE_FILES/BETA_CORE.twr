@@ -1,0 +1,1786 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -filter
+F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter -intstyle ise
+-v 3 -s 3 -n 3 -fastpaths -xml BETA_CORE.twx BETA_CORE.ncd -o BETA_CORE.twr
+BETA_CORE.pcf
+
+Design file:              BETA_CORE.ncd
+Physical constraint file: BETA_CORE.pcf
+Device,package,speed:     xc6slx9,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+ID<0>       |   12.595(R)|      SLOW  |   -2.057(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<1>       |   12.721(R)|      SLOW  |   -2.083(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<2>       |   14.119(R)|      SLOW  |   -2.256(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<3>       |   12.488(R)|      SLOW  |   -2.278(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<4>       |   12.146(R)|      SLOW  |   -1.953(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<5>       |   11.891(R)|      SLOW  |   -1.964(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<6>       |   11.993(R)|      SLOW  |   -2.003(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<7>       |   11.943(R)|      SLOW  |   -1.954(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<8>       |   12.038(R)|      SLOW  |   -2.118(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<9>       |   11.503(R)|      SLOW  |   -1.758(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<10>      |   11.468(R)|      SLOW  |   -1.740(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<11>      |   14.407(R)|      SLOW  |   -1.495(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<12>      |   13.930(R)|      SLOW  |   -1.665(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<13>      |   14.065(R)|      SLOW  |   -1.313(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<14>      |   13.681(R)|      SLOW  |   -1.514(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<15>      |   14.909(R)|      SLOW  |   -1.742(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<16>      |   15.123(R)|      SLOW  |   -1.631(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<17>      |   13.420(R)|      SLOW  |   -1.496(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<18>      |   13.113(R)|      SLOW  |   -1.658(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<19>      |   13.083(R)|      SLOW  |   -1.717(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<20>      |   12.119(R)|      SLOW  |   -1.732(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<21>      |   12.285(R)|      SLOW  |   -1.444(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<22>      |   13.203(R)|      SLOW  |   -2.031(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<23>      |   12.734(R)|      SLOW  |   -1.655(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<24>      |   12.748(R)|      SLOW  |   -1.481(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<25>      |   12.434(R)|      SLOW  |   -1.687(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<26>      |   14.572(R)|      SLOW  |   -1.828(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<27>      |   14.380(R)|      SLOW  |   -1.126(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<28>      |   13.899(R)|      SLOW  |   -1.398(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<29>      |   14.080(R)|      SLOW  |   -1.575(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<30>      |   15.125(R)|      SLOW  |   -2.636(R)|      FAST  |CLK_BUFGP         |   0.000|
+ID<31>      |   14.715(R)|      SLOW  |   -2.051(R)|      FAST  |CLK_BUFGP         |   0.000|
+IRQ         |    8.685(R)|      SLOW  |   -0.237(R)|      SLOW  |CLK_BUFGP         |   0.000|
+MRD<0>      |    7.009(R)|      SLOW  |   -2.900(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<1>      |    6.576(R)|      SLOW  |   -3.345(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<2>      |    5.419(R)|      SLOW  |   -2.593(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<3>      |    6.466(R)|      SLOW  |   -3.031(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<4>      |    6.382(R)|      SLOW  |   -3.168(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<5>      |    5.204(R)|      SLOW  |   -2.029(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<6>      |    5.457(R)|      SLOW  |   -2.644(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<7>      |    5.447(R)|      SLOW  |   -2.609(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<8>      |    4.652(R)|      SLOW  |   -2.141(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<9>      |    5.431(R)|      SLOW  |   -2.236(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<10>     |    6.526(R)|      SLOW  |   -3.009(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<11>     |    5.233(R)|      SLOW  |   -2.497(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<12>     |    5.231(R)|      SLOW  |   -2.350(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<13>     |    6.270(R)|      SLOW  |   -2.787(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<14>     |    5.483(R)|      SLOW  |   -2.546(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<15>     |    4.347(R)|      SLOW  |   -1.841(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<16>     |    5.500(R)|      SLOW  |   -2.660(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<17>     |    4.610(R)|      SLOW  |   -2.187(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<18>     |    4.582(R)|      SLOW  |   -1.950(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<19>     |    4.609(R)|      SLOW  |   -2.127(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<20>     |    5.554(R)|      SLOW  |   -2.844(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<21>     |    5.667(R)|      SLOW  |   -2.834(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<22>     |    6.336(R)|      SLOW  |   -2.434(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<23>     |    5.543(R)|      SLOW  |   -2.555(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<24>     |    5.140(R)|      SLOW  |   -2.561(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<25>     |    5.916(R)|      SLOW  |   -2.421(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<26>     |    5.218(R)|      SLOW  |   -1.880(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<27>     |    4.418(R)|      SLOW  |   -2.001(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<28>     |    5.994(R)|      SLOW  |   -2.487(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<29>     |    5.515(R)|      SLOW  |   -2.511(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<30>     |    5.348(R)|      SLOW  |   -2.144(R)|      FAST  |CLK_BUFGP         |   0.000|
+MRD<31>     |    5.067(R)|      SLOW  |   -2.200(R)|      FAST  |CLK_BUFGP         |   0.000|
+RESET       |    3.279(R)|      SLOW  |   -0.105(R)|      SLOW  |CLK_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+IA<2>       |         7.005(R)|      SLOW  |         3.600(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<3>       |         7.009(R)|      SLOW  |         3.612(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<4>       |         6.961(R)|      SLOW  |         3.569(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<5>       |         7.006(R)|      SLOW  |         3.635(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<6>       |         6.801(R)|      SLOW  |         3.465(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<7>       |         7.304(R)|      SLOW  |         3.843(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<8>       |         7.451(R)|      SLOW  |         3.936(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<9>       |         7.405(R)|      SLOW  |         3.915(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<10>      |         7.318(R)|      SLOW  |         3.818(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<11>      |         7.388(R)|      SLOW  |         3.875(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<12>      |         7.348(R)|      SLOW  |         3.872(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<13>      |         6.860(R)|      SLOW  |         3.500(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<14>      |         7.023(R)|      SLOW  |         3.603(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<15>      |         7.023(R)|      SLOW  |         3.603(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<16>      |         7.278(R)|      SLOW  |         3.819(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<17>      |         7.182(R)|      SLOW  |         3.713(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<18>      |         7.363(R)|      SLOW  |         3.795(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<19>      |         7.363(R)|      SLOW  |         3.795(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<20>      |         7.450(R)|      SLOW  |         3.846(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<21>      |         7.546(R)|      SLOW  |         3.945(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<22>      |         8.042(R)|      SLOW  |         4.237(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<23>      |         7.960(R)|      SLOW  |         4.194(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<24>      |         7.982(R)|      SLOW  |         4.221(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<25>      |         7.999(R)|      SLOW  |         4.223(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<26>      |         8.395(R)|      SLOW  |         4.458(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<27>      |         8.228(R)|      SLOW  |         4.345(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<28>      |         8.258(R)|      SLOW  |         4.354(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<29>      |         8.735(R)|      SLOW  |         4.676(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<30>      |         8.589(R)|      SLOW  |         4.596(R)|      FAST  |CLK_BUFGP         |   0.000|
+IA<31>      |         9.910(R)|      SLOW  |         5.504(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<0>       |        19.583(R)|      SLOW  |         7.826(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<1>       |        18.670(R)|      SLOW  |         7.064(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<2>       |        18.824(R)|      SLOW  |         7.423(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<3>       |        17.532(R)|      SLOW  |         6.799(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<4>       |        18.846(R)|      SLOW  |         7.297(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<5>       |        17.704(R)|      SLOW  |         7.127(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<6>       |        17.534(R)|      SLOW  |         7.656(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<7>       |        19.012(R)|      SLOW  |         7.106(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<8>       |        20.363(R)|      SLOW  |         6.903(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<9>       |        18.658(R)|      SLOW  |         7.038(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<10>      |        17.794(R)|      SLOW  |         7.479(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<11>      |        18.304(R)|      SLOW  |         7.214(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<12>      |        18.875(R)|      SLOW  |         7.564(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<13>      |        19.772(R)|      SLOW  |         7.138(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<14>      |        16.987(R)|      SLOW  |         6.781(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<15>      |        18.138(R)|      SLOW  |         6.643(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<16>      |        18.075(R)|      SLOW  |         7.150(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<17>      |        17.676(R)|      SLOW  |         6.869(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<18>      |        17.352(R)|      SLOW  |         6.978(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<19>      |        17.558(R)|      SLOW  |         7.275(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<20>      |        18.092(R)|      SLOW  |         7.066(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<21>      |        17.590(R)|      SLOW  |         7.295(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<22>      |        18.020(R)|      SLOW  |         6.859(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<23>      |        18.346(R)|      SLOW  |         7.114(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<24>      |        18.069(R)|      SLOW  |         6.417(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<25>      |        18.001(R)|      SLOW  |         7.115(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<26>      |        18.301(R)|      SLOW  |         6.950(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<27>      |        17.495(R)|      SLOW  |         7.101(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<28>      |        18.691(R)|      SLOW  |         7.145(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<29>      |        18.048(R)|      SLOW  |         7.501(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<30>      |        18.448(R)|      SLOW  |         7.327(R)|      FAST  |CLK_BUFGP         |   0.000|
+MA<31>      |        18.892(R)|      SLOW  |         7.717(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<0>      |        10.651(R)|      SLOW  |         5.907(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<1>      |        10.766(R)|      SLOW  |         6.076(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<2>      |        11.278(R)|      SLOW  |         6.387(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<3>      |        10.234(R)|      SLOW  |         5.728(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<4>      |        10.398(R)|      SLOW  |         5.792(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<5>      |        10.840(R)|      SLOW  |         6.117(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<6>      |        10.448(R)|      SLOW  |         5.880(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<7>      |        10.441(R)|      SLOW  |         5.853(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<8>      |        10.547(R)|      SLOW  |         5.838(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<9>      |        10.681(R)|      SLOW  |         5.969(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<10>     |        10.309(R)|      SLOW  |         5.751(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<11>     |        10.246(R)|      SLOW  |         5.672(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<12>     |        10.314(R)|      SLOW  |         5.714(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<13>     |        10.702(R)|      SLOW  |         5.967(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<14>     |        10.355(R)|      SLOW  |         5.773(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<15>     |        10.383(R)|      SLOW  |         5.804(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<16>     |        10.139(R)|      SLOW  |         5.559(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<17>     |        10.489(R)|      SLOW  |         5.887(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<18>     |        10.561(R)|      SLOW  |         5.924(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<19>     |        10.154(R)|      SLOW  |         5.618(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<20>     |        10.188(R)|      SLOW  |         5.604(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<21>     |         9.916(R)|      SLOW  |         5.431(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<22>     |        10.160(R)|      SLOW  |         5.624(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<23>     |        10.069(R)|      SLOW  |         5.609(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<24>     |         9.795(R)|      SLOW  |         5.390(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<25>     |         9.674(R)|      SLOW  |         5.297(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<26>     |        10.199(R)|      SLOW  |         5.663(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<27>     |        10.099(R)|      SLOW  |         5.573(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<28>     |         9.526(R)|      SLOW  |         5.225(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<29>     |         9.912(R)|      SLOW  |         5.454(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<30>     |         9.617(R)|      SLOW  |         5.292(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWD<31>     |         9.556(R)|      SLOW  |         5.260(R)|      FAST  |CLK_BUFGP         |   0.000|
+MWR         |         8.637(R)|      SLOW  |         4.639(R)|      FAST  |CLK_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |   12.303|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ID<0>          |MA<0>          |   19.193|
+ID<0>          |MA<1>          |   18.318|
+ID<0>          |MA<2>          |   18.434|
+ID<0>          |MA<3>          |   17.142|
+ID<0>          |MA<4>          |   18.456|
+ID<0>          |MA<5>          |   17.352|
+ID<0>          |MA<6>          |   17.193|
+ID<0>          |MA<7>          |   18.622|
+ID<0>          |MA<8>          |   19.973|
+ID<0>          |MA<9>          |   18.306|
+ID<0>          |MA<10>         |   17.404|
+ID<0>          |MA<11>         |   17.914|
+ID<0>          |MA<12>         |   18.546|
+ID<0>          |MA<13>         |   19.420|
+ID<0>          |MA<14>         |   16.597|
+ID<0>          |MA<15>         |   17.748|
+ID<0>          |MA<16>         |   17.685|
+ID<0>          |MA<17>         |   17.286|
+ID<0>          |MA<18>         |   16.962|
+ID<0>          |MA<19>         |   17.168|
+ID<0>          |MA<20>         |   17.702|
+ID<0>          |MA<21>         |   17.238|
+ID<0>          |MA<22>         |   17.668|
+ID<0>          |MA<23>         |   18.076|
+ID<0>          |MA<24>         |   17.679|
+ID<0>          |MA<25>         |   17.611|
+ID<0>          |MA<26>         |   17.949|
+ID<0>          |MA<27>         |   17.105|
+ID<0>          |MA<28>         |   18.301|
+ID<0>          |MA<29>         |   17.658|
+ID<0>          |MA<30>         |   18.058|
+ID<0>          |MA<31>         |   18.552|
+ID<1>          |MA<0>          |   19.319|
+ID<1>          |MA<1>          |   18.444|
+ID<1>          |MA<2>          |   18.781|
+ID<1>          |MA<3>          |   17.540|
+ID<1>          |MA<4>          |   18.582|
+ID<1>          |MA<5>          |   17.478|
+ID<1>          |MA<6>          |   17.773|
+ID<1>          |MA<7>          |   18.748|
+ID<1>          |MA<8>          |   20.099|
+ID<1>          |MA<9>          |   18.432|
+ID<1>          |MA<10>         |   17.590|
+ID<1>          |MA<11>         |   18.040|
+ID<1>          |MA<12>         |   18.672|
+ID<1>          |MA<13>         |   19.546|
+ID<1>          |MA<14>         |   16.853|
+ID<1>          |MA<15>         |   17.874|
+ID<1>          |MA<16>         |   17.811|
+ID<1>          |MA<17>         |   17.412|
+ID<1>          |MA<18>         |   17.088|
+ID<1>          |MA<19>         |   17.294|
+ID<1>          |MA<20>         |   17.828|
+ID<1>          |MA<21>         |   17.364|
+ID<1>          |MA<22>         |   17.794|
+ID<1>          |MA<23>         |   18.202|
+ID<1>          |MA<24>         |   17.805|
+ID<1>          |MA<25>         |   17.737|
+ID<1>          |MA<26>         |   18.219|
+ID<1>          |MA<27>         |   17.231|
+ID<1>          |MA<28>         |   18.427|
+ID<1>          |MA<29>         |   17.882|
+ID<1>          |MA<30>         |   18.184|
+ID<1>          |MA<31>         |   18.678|
+ID<2>          |MA<0>          |   19.674|
+ID<2>          |MA<1>          |   19.704|
+ID<2>          |MA<2>          |   20.446|
+ID<2>          |MA<3>          |   18.812|
+ID<2>          |MA<4>          |   18.717|
+ID<2>          |MA<5>          |   17.613|
+ID<2>          |MA<6>          |   18.331|
+ID<2>          |MA<7>          |   18.883|
+ID<2>          |MA<8>          |   20.234|
+ID<2>          |MA<9>          |   18.567|
+ID<2>          |MA<10>         |   19.240|
+ID<2>          |MA<11>         |   18.289|
+ID<2>          |MA<12>         |   19.361|
+ID<2>          |MA<13>         |   19.681|
+ID<2>          |MA<14>         |   17.809|
+ID<2>          |MA<15>         |   18.698|
+ID<2>          |MA<16>         |   17.946|
+ID<2>          |MA<17>         |   17.547|
+ID<2>          |MA<18>         |   18.099|
+ID<2>          |MA<19>         |   17.429|
+ID<2>          |MA<20>         |   18.178|
+ID<2>          |MA<21>         |   17.546|
+ID<2>          |MA<22>         |   17.976|
+ID<2>          |MA<23>         |   18.337|
+ID<2>          |MA<24>         |   17.940|
+ID<2>          |MA<25>         |   17.872|
+ID<2>          |MA<26>         |   19.874|
+ID<2>          |MA<27>         |   17.366|
+ID<2>          |MA<28>         |   18.562|
+ID<2>          |MA<29>         |   18.823|
+ID<2>          |MA<30>         |   19.012|
+ID<2>          |MA<31>         |   19.796|
+ID<3>          |MA<0>          |   19.086|
+ID<3>          |MA<1>          |   18.211|
+ID<3>          |MA<2>          |   18.327|
+ID<3>          |MA<3>          |   17.097|
+ID<3>          |MA<4>          |   18.349|
+ID<3>          |MA<5>          |   17.245|
+ID<3>          |MA<6>          |   17.086|
+ID<3>          |MA<7>          |   18.515|
+ID<3>          |MA<8>          |   19.866|
+ID<3>          |MA<9>          |   18.199|
+ID<3>          |MA<10>         |   17.297|
+ID<3>          |MA<11>         |   17.807|
+ID<3>          |MA<12>         |   18.439|
+ID<3>          |MA<13>         |   19.313|
+ID<3>          |MA<14>         |   16.490|
+ID<3>          |MA<15>         |   17.641|
+ID<3>          |MA<16>         |   17.578|
+ID<3>          |MA<17>         |   17.179|
+ID<3>          |MA<18>         |   16.855|
+ID<3>          |MA<19>         |   17.061|
+ID<3>          |MA<20>         |   17.595|
+ID<3>          |MA<21>         |   17.131|
+ID<3>          |MA<22>         |   17.561|
+ID<3>          |MA<23>         |   17.969|
+ID<3>          |MA<24>         |   17.572|
+ID<3>          |MA<25>         |   17.504|
+ID<3>          |MA<26>         |   17.842|
+ID<3>          |MA<27>         |   16.998|
+ID<3>          |MA<28>         |   18.194|
+ID<3>          |MA<29>         |   17.551|
+ID<3>          |MA<30>         |   17.951|
+ID<3>          |MA<31>         |   18.445|
+ID<4>          |MA<0>          |   18.744|
+ID<4>          |MA<1>          |   17.869|
+ID<4>          |MA<2>          |   17.985|
+ID<4>          |MA<3>          |   16.693|
+ID<4>          |MA<4>          |   18.007|
+ID<4>          |MA<5>          |   16.903|
+ID<4>          |MA<6>          |   16.703|
+ID<4>          |MA<7>          |   18.173|
+ID<4>          |MA<8>          |   19.524|
+ID<4>          |MA<9>          |   17.857|
+ID<4>          |MA<10>         |   16.955|
+ID<4>          |MA<11>         |   17.465|
+ID<4>          |MA<12>         |   18.074|
+ID<4>          |MA<13>         |   18.971|
+ID<4>          |MA<14>         |   16.148|
+ID<4>          |MA<15>         |   17.299|
+ID<4>          |MA<16>         |   17.236|
+ID<4>          |MA<17>         |   16.837|
+ID<4>          |MA<18>         |   16.513|
+ID<4>          |MA<19>         |   16.719|
+ID<4>          |MA<20>         |   17.253|
+ID<4>          |MA<21>         |   16.789|
+ID<4>          |MA<22>         |   17.219|
+ID<4>          |MA<23>         |   17.586|
+ID<4>          |MA<24>         |   17.230|
+ID<4>          |MA<25>         |   17.162|
+ID<4>          |MA<26>         |   17.500|
+ID<4>          |MA<27>         |   16.656|
+ID<4>          |MA<28>         |   17.852|
+ID<4>          |MA<29>         |   17.209|
+ID<4>          |MA<30>         |   17.609|
+ID<4>          |MA<31>         |   18.062|
+ID<5>          |MA<0>          |   18.489|
+ID<5>          |MA<1>          |   17.614|
+ID<5>          |MA<2>          |   17.730|
+ID<5>          |MA<3>          |   16.438|
+ID<5>          |MA<4>          |   17.752|
+ID<5>          |MA<5>          |   16.648|
+ID<5>          |MA<6>          |   16.455|
+ID<5>          |MA<7>          |   17.918|
+ID<5>          |MA<8>          |   19.269|
+ID<5>          |MA<9>          |   17.602|
+ID<5>          |MA<10>         |   16.700|
+ID<5>          |MA<11>         |   17.210|
+ID<5>          |MA<12>         |   17.819|
+ID<5>          |MA<13>         |   18.716|
+ID<5>          |MA<14>         |   15.893|
+ID<5>          |MA<15>         |   17.044|
+ID<5>          |MA<16>         |   16.981|
+ID<5>          |MA<17>         |   16.582|
+ID<5>          |MA<18>         |   16.258|
+ID<5>          |MA<19>         |   16.464|
+ID<5>          |MA<20>         |   16.998|
+ID<5>          |MA<21>         |   16.534|
+ID<5>          |MA<22>         |   16.964|
+ID<5>          |MA<23>         |   17.338|
+ID<5>          |MA<24>         |   16.975|
+ID<5>          |MA<25>         |   16.907|
+ID<5>          |MA<26>         |   17.245|
+ID<5>          |MA<27>         |   16.401|
+ID<5>          |MA<28>         |   17.597|
+ID<5>          |MA<29>         |   16.954|
+ID<5>          |MA<30>         |   17.354|
+ID<5>          |MA<31>         |   17.814|
+ID<6>          |MA<0>          |   18.591|
+ID<6>          |MA<1>          |   17.716|
+ID<6>          |MA<2>          |   17.832|
+ID<6>          |MA<3>          |   16.540|
+ID<6>          |MA<4>          |   17.854|
+ID<6>          |MA<5>          |   16.750|
+ID<6>          |MA<6>          |   16.542|
+ID<6>          |MA<7>          |   18.020|
+ID<6>          |MA<8>          |   19.371|
+ID<6>          |MA<9>          |   17.704|
+ID<6>          |MA<10>         |   16.802|
+ID<6>          |MA<11>         |   17.312|
+ID<6>          |MA<12>         |   17.921|
+ID<6>          |MA<13>         |   18.818|
+ID<6>          |MA<14>         |   15.995|
+ID<6>          |MA<15>         |   17.146|
+ID<6>          |MA<16>         |   17.083|
+ID<6>          |MA<17>         |   16.684|
+ID<6>          |MA<18>         |   16.360|
+ID<6>          |MA<19>         |   16.566|
+ID<6>          |MA<20>         |   17.100|
+ID<6>          |MA<21>         |   16.636|
+ID<6>          |MA<22>         |   17.066|
+ID<6>          |MA<23>         |   17.394|
+ID<6>          |MA<24>         |   17.077|
+ID<6>          |MA<25>         |   17.009|
+ID<6>          |MA<26>         |   17.347|
+ID<6>          |MA<27>         |   16.503|
+ID<6>          |MA<28>         |   17.699|
+ID<6>          |MA<29>         |   17.056|
+ID<6>          |MA<30>         |   17.456|
+ID<6>          |MA<31>         |   17.870|
+ID<7>          |MA<0>          |   18.541|
+ID<7>          |MA<1>          |   17.666|
+ID<7>          |MA<2>          |   17.782|
+ID<7>          |MA<3>          |   16.490|
+ID<7>          |MA<4>          |   17.804|
+ID<7>          |MA<5>          |   16.700|
+ID<7>          |MA<6>          |   16.492|
+ID<7>          |MA<7>          |   17.970|
+ID<7>          |MA<8>          |   19.321|
+ID<7>          |MA<9>          |   17.654|
+ID<7>          |MA<10>         |   16.752|
+ID<7>          |MA<11>         |   17.262|
+ID<7>          |MA<12>         |   17.871|
+ID<7>          |MA<13>         |   18.768|
+ID<7>          |MA<14>         |   15.945|
+ID<7>          |MA<15>         |   17.096|
+ID<7>          |MA<16>         |   17.033|
+ID<7>          |MA<17>         |   16.634|
+ID<7>          |MA<18>         |   16.310|
+ID<7>          |MA<19>         |   16.516|
+ID<7>          |MA<20>         |   17.050|
+ID<7>          |MA<21>         |   16.586|
+ID<7>          |MA<22>         |   17.016|
+ID<7>          |MA<23>         |   17.342|
+ID<7>          |MA<24>         |   17.027|
+ID<7>          |MA<25>         |   16.959|
+ID<7>          |MA<26>         |   17.297|
+ID<7>          |MA<27>         |   16.453|
+ID<7>          |MA<28>         |   17.649|
+ID<7>          |MA<29>         |   17.006|
+ID<7>          |MA<30>         |   17.406|
+ID<7>          |MA<31>         |   17.818|
+ID<8>          |MA<0>          |   18.677|
+ID<8>          |MA<1>          |   17.761|
+ID<8>          |MA<2>          |   17.918|
+ID<8>          |MA<3>          |   16.626|
+ID<8>          |MA<4>          |   17.940|
+ID<8>          |MA<5>          |   16.795|
+ID<8>          |MA<6>          |   16.628|
+ID<8>          |MA<7>          |   18.106|
+ID<8>          |MA<8>          |   19.457|
+ID<8>          |MA<9>          |   17.749|
+ID<8>          |MA<10>         |   16.888|
+ID<8>          |MA<11>         |   17.398|
+ID<8>          |MA<12>         |   17.860|
+ID<8>          |MA<13>         |   18.863|
+ID<8>          |MA<14>         |   16.081|
+ID<8>          |MA<15>         |   17.232|
+ID<8>          |MA<16>         |   17.169|
+ID<8>          |MA<17>         |   16.770|
+ID<8>          |MA<18>         |   16.446|
+ID<8>          |MA<19>         |   16.652|
+ID<8>          |MA<20>         |   17.186|
+ID<8>          |MA<21>         |   16.681|
+ID<8>          |MA<22>         |   17.111|
+ID<8>          |MA<23>         |   17.213|
+ID<8>          |MA<24>         |   17.163|
+ID<8>          |MA<25>         |   17.095|
+ID<8>          |MA<26>         |   17.392|
+ID<8>          |MA<27>         |   16.589|
+ID<8>          |MA<28>         |   17.785|
+ID<8>          |MA<29>         |   17.142|
+ID<8>          |MA<30>         |   17.542|
+ID<8>          |MA<31>         |   17.586|
+ID<9>          |MA<0>          |   18.135|
+ID<9>          |MA<1>          |   17.226|
+ID<9>          |MA<2>          |   17.376|
+ID<9>          |MA<3>          |   16.084|
+ID<9>          |MA<4>          |   17.398|
+ID<9>          |MA<5>          |   16.260|
+ID<9>          |MA<6>          |   16.086|
+ID<9>          |MA<7>          |   17.564|
+ID<9>          |MA<8>          |   18.915|
+ID<9>          |MA<9>          |   17.214|
+ID<9>          |MA<10>         |   16.346|
+ID<9>          |MA<11>         |   16.856|
+ID<9>          |MA<12>         |   17.274|
+ID<9>          |MA<13>         |   18.328|
+ID<9>          |MA<14>         |   15.539|
+ID<9>          |MA<15>         |   16.690|
+ID<9>          |MA<16>         |   16.627|
+ID<9>          |MA<17>         |   16.228|
+ID<9>          |MA<18>         |   15.904|
+ID<9>          |MA<19>         |   16.110|
+ID<9>          |MA<20>         |   16.644|
+ID<9>          |MA<21>         |   16.146|
+ID<9>          |MA<22>         |   16.576|
+ID<9>          |MA<23>         |   16.671|
+ID<9>          |MA<24>         |   16.621|
+ID<9>          |MA<25>         |   16.553|
+ID<9>          |MA<26>         |   16.857|
+ID<9>          |MA<27>         |   16.047|
+ID<9>          |MA<28>         |   17.243|
+ID<9>          |MA<29>         |   16.600|
+ID<9>          |MA<30>         |   17.000|
+ID<9>          |MA<31>         |   17.000|
+ID<10>         |MA<0>          |   18.134|
+ID<10>         |MA<1>          |   17.179|
+ID<10>         |MA<2>          |   17.375|
+ID<10>         |MA<3>          |   16.083|
+ID<10>         |MA<4>          |   17.397|
+ID<10>         |MA<5>          |   16.213|
+ID<10>         |MA<6>          |   16.085|
+ID<10>         |MA<7>          |   17.563|
+ID<10>         |MA<8>          |   18.914|
+ID<10>         |MA<9>          |   17.167|
+ID<10>         |MA<10>         |   16.345|
+ID<10>         |MA<11>         |   16.855|
+ID<10>         |MA<12>         |   17.120|
+ID<10>         |MA<13>         |   18.281|
+ID<10>         |MA<14>         |   15.538|
+ID<10>         |MA<15>         |   16.689|
+ID<10>         |MA<16>         |   16.626|
+ID<10>         |MA<17>         |   16.227|
+ID<10>         |MA<18>         |   15.903|
+ID<10>         |MA<19>         |   16.109|
+ID<10>         |MA<20>         |   16.643|
+ID<10>         |MA<21>         |   16.099|
+ID<10>         |MA<22>         |   16.529|
+ID<10>         |MA<23>         |   16.670|
+ID<10>         |MA<24>         |   16.620|
+ID<10>         |MA<25>         |   16.552|
+ID<10>         |MA<26>         |   16.810|
+ID<10>         |MA<27>         |   16.046|
+ID<10>         |MA<28>         |   17.242|
+ID<10>         |MA<29>         |   16.599|
+ID<10>         |MA<30>         |   16.999|
+ID<10>         |MA<31>         |   16.752|
+ID<11>         |MA<0>          |   20.001|
+ID<11>         |MA<1>          |   19.992|
+ID<11>         |MA<2>          |   20.734|
+ID<11>         |MA<3>          |   19.100|
+ID<11>         |MA<4>          |   17.965|
+ID<11>         |MA<5>          |   17.301|
+ID<11>         |MA<6>          |   18.619|
+ID<11>         |MA<7>          |   18.037|
+ID<11>         |MA<8>          |   19.115|
+ID<11>         |MA<9>          |   17.320|
+ID<11>         |MA<10>         |   19.528|
+ID<11>         |MA<11>         |   18.577|
+ID<11>         |MA<12>         |   19.649|
+ID<11>         |MA<13>         |   19.745|
+ID<11>         |MA<14>         |   18.097|
+ID<11>         |MA<15>         |   18.986|
+ID<11>         |MA<16>         |   17.683|
+ID<11>         |MA<17>         |   17.770|
+ID<11>         |MA<18>         |   18.387|
+ID<11>         |MA<19>         |   17.349|
+ID<11>         |MA<20>         |   18.466|
+ID<11>         |MA<21>         |   17.873|
+ID<11>         |MA<22>         |   18.303|
+ID<11>         |MA<23>         |   17.882|
+ID<11>         |MA<24>         |   17.796|
+ID<11>         |MA<25>         |   18.119|
+ID<11>         |MA<26>         |   20.162|
+ID<11>         |MA<27>         |   17.293|
+ID<11>         |MA<28>         |   18.649|
+ID<11>         |MA<29>         |   19.111|
+ID<11>         |MA<30>         |   19.300|
+ID<11>         |MA<31>         |   20.084|
+ID<11>         |MWD<0>         |   12.137|
+ID<11>         |MWD<1>         |   13.757|
+ID<11>         |MWD<2>         |   12.062|
+ID<11>         |MWD<3>         |   13.760|
+ID<11>         |MWD<4>         |   13.732|
+ID<11>         |MWD<5>         |   13.568|
+ID<11>         |MWD<6>         |   13.675|
+ID<11>         |MWD<7>         |   13.781|
+ID<11>         |MWD<8>         |   13.374|
+ID<11>         |MWD<9>         |   13.194|
+ID<11>         |MWD<10>        |   13.140|
+ID<11>         |MWD<11>        |   13.241|
+ID<11>         |MWD<12>        |   13.222|
+ID<11>         |MWD<13>        |   13.032|
+ID<11>         |MWD<14>        |   13.140|
+ID<11>         |MWD<15>        |   12.923|
+ID<11>         |MWD<16>        |   13.046|
+ID<11>         |MWD<17>        |   13.705|
+ID<11>         |MWD<18>        |   13.919|
+ID<11>         |MWD<19>        |   12.952|
+ID<11>         |MWD<20>        |   13.014|
+ID<11>         |MWD<21>        |   12.676|
+ID<11>         |MWD<22>        |   12.797|
+ID<11>         |MWD<23>        |   12.782|
+ID<11>         |MWD<24>        |   12.645|
+ID<11>         |MWD<25>        |   12.522|
+ID<11>         |MWD<26>        |   12.389|
+ID<11>         |MWD<27>        |   12.660|
+ID<11>         |MWD<28>        |   12.087|
+ID<11>         |MWD<29>        |   12.461|
+ID<11>         |MWD<30>        |   11.707|
+ID<11>         |MWD<31>        |   11.611|
+ID<12>         |MA<0>          |   19.524|
+ID<12>         |MA<1>          |   19.515|
+ID<12>         |MA<2>          |   20.257|
+ID<12>         |MA<3>          |   18.623|
+ID<12>         |MA<4>          |   17.488|
+ID<12>         |MA<5>          |   16.824|
+ID<12>         |MA<6>          |   18.142|
+ID<12>         |MA<7>          |   17.560|
+ID<12>         |MA<8>          |   18.872|
+ID<12>         |MA<9>          |   16.843|
+ID<12>         |MA<10>         |   19.051|
+ID<12>         |MA<11>         |   18.100|
+ID<12>         |MA<12>         |   19.172|
+ID<12>         |MA<13>         |   19.268|
+ID<12>         |MA<14>         |   17.620|
+ID<12>         |MA<15>         |   18.509|
+ID<12>         |MA<16>         |   17.206|
+ID<12>         |MA<17>         |   17.293|
+ID<12>         |MA<18>         |   17.910|
+ID<12>         |MA<19>         |   16.872|
+ID<12>         |MA<20>         |   17.989|
+ID<12>         |MA<21>         |   17.396|
+ID<12>         |MA<22>         |   17.826|
+ID<12>         |MA<23>         |   17.405|
+ID<12>         |MA<24>         |   17.319|
+ID<12>         |MA<25>         |   17.642|
+ID<12>         |MA<26>         |   19.685|
+ID<12>         |MA<27>         |   16.816|
+ID<12>         |MA<28>         |   18.172|
+ID<12>         |MA<29>         |   18.634|
+ID<12>         |MA<30>         |   18.823|
+ID<12>         |MA<31>         |   19.607|
+ID<12>         |MWD<0>         |   11.660|
+ID<12>         |MWD<1>         |   13.280|
+ID<12>         |MWD<2>         |   11.585|
+ID<12>         |MWD<3>         |   13.283|
+ID<12>         |MWD<4>         |   13.255|
+ID<12>         |MWD<5>         |   13.091|
+ID<12>         |MWD<6>         |   13.198|
+ID<12>         |MWD<7>         |   13.304|
+ID<12>         |MWD<8>         |   12.897|
+ID<12>         |MWD<9>         |   12.717|
+ID<12>         |MWD<10>        |   12.663|
+ID<12>         |MWD<11>        |   12.764|
+ID<12>         |MWD<12>        |   12.745|
+ID<12>         |MWD<13>        |   12.555|
+ID<12>         |MWD<14>        |   12.663|
+ID<12>         |MWD<15>        |   12.446|
+ID<12>         |MWD<16>        |   12.569|
+ID<12>         |MWD<17>        |   13.228|
+ID<12>         |MWD<18>        |   13.442|
+ID<12>         |MWD<19>        |   12.475|
+ID<12>         |MWD<20>        |   12.537|
+ID<12>         |MWD<21>        |   12.199|
+ID<12>         |MWD<22>        |   12.320|
+ID<12>         |MWD<23>        |   12.305|
+ID<12>         |MWD<24>        |   12.168|
+ID<12>         |MWD<25>        |   12.045|
+ID<12>         |MWD<26>        |   11.912|
+ID<12>         |MWD<27>        |   12.183|
+ID<12>         |MWD<28>        |   11.610|
+ID<12>         |MWD<29>        |   11.984|
+ID<12>         |MWD<30>        |   11.230|
+ID<12>         |MWD<31>        |   11.134|
+ID<13>         |MA<0>          |   19.659|
+ID<13>         |MA<1>          |   19.650|
+ID<13>         |MA<2>          |   20.392|
+ID<13>         |MA<3>          |   18.758|
+ID<13>         |MA<4>          |   17.623|
+ID<13>         |MA<5>          |   16.959|
+ID<13>         |MA<6>          |   18.277|
+ID<13>         |MA<7>          |   17.695|
+ID<13>         |MA<8>          |   18.773|
+ID<13>         |MA<9>          |   16.978|
+ID<13>         |MA<10>         |   19.186|
+ID<13>         |MA<11>         |   18.235|
+ID<13>         |MA<12>         |   19.307|
+ID<13>         |MA<13>         |   19.403|
+ID<13>         |MA<14>         |   17.755|
+ID<13>         |MA<15>         |   18.644|
+ID<13>         |MA<16>         |   17.341|
+ID<13>         |MA<17>         |   17.428|
+ID<13>         |MA<18>         |   18.045|
+ID<13>         |MA<19>         |   17.007|
+ID<13>         |MA<20>         |   18.124|
+ID<13>         |MA<21>         |   17.531|
+ID<13>         |MA<22>         |   17.961|
+ID<13>         |MA<23>         |   17.540|
+ID<13>         |MA<24>         |   17.454|
+ID<13>         |MA<25>         |   17.777|
+ID<13>         |MA<26>         |   19.820|
+ID<13>         |MA<27>         |   16.951|
+ID<13>         |MA<28>         |   18.307|
+ID<13>         |MA<29>         |   18.769|
+ID<13>         |MA<30>         |   18.958|
+ID<13>         |MA<31>         |   19.742|
+ID<13>         |MWD<0>         |   11.795|
+ID<13>         |MWD<1>         |   13.415|
+ID<13>         |MWD<2>         |   11.720|
+ID<13>         |MWD<3>         |   13.418|
+ID<13>         |MWD<4>         |   13.390|
+ID<13>         |MWD<5>         |   13.226|
+ID<13>         |MWD<6>         |   13.333|
+ID<13>         |MWD<7>         |   13.439|
+ID<13>         |MWD<8>         |   13.032|
+ID<13>         |MWD<9>         |   12.852|
+ID<13>         |MWD<10>        |   12.798|
+ID<13>         |MWD<11>        |   12.899|
+ID<13>         |MWD<12>        |   12.880|
+ID<13>         |MWD<13>        |   12.690|
+ID<13>         |MWD<14>        |   12.798|
+ID<13>         |MWD<15>        |   12.581|
+ID<13>         |MWD<16>        |   12.704|
+ID<13>         |MWD<17>        |   13.363|
+ID<13>         |MWD<18>        |   13.577|
+ID<13>         |MWD<19>        |   12.610|
+ID<13>         |MWD<20>        |   12.672|
+ID<13>         |MWD<21>        |   12.334|
+ID<13>         |MWD<22>        |   12.455|
+ID<13>         |MWD<23>        |   12.440|
+ID<13>         |MWD<24>        |   12.303|
+ID<13>         |MWD<25>        |   12.180|
+ID<13>         |MWD<26>        |   12.047|
+ID<13>         |MWD<27>        |   12.318|
+ID<13>         |MWD<28>        |   11.745|
+ID<13>         |MWD<29>        |   12.119|
+ID<13>         |MWD<30>        |   11.365|
+ID<13>         |MWD<31>        |   11.269|
+ID<14>         |MA<0>          |   19.275|
+ID<14>         |MA<1>          |   19.266|
+ID<14>         |MA<2>          |   20.008|
+ID<14>         |MA<3>          |   18.374|
+ID<14>         |MA<4>          |   17.239|
+ID<14>         |MA<5>          |   16.575|
+ID<14>         |MA<6>          |   17.893|
+ID<14>         |MA<7>          |   17.311|
+ID<14>         |MA<8>          |   18.418|
+ID<14>         |MA<9>          |   16.594|
+ID<14>         |MA<10>         |   18.802|
+ID<14>         |MA<11>         |   17.851|
+ID<14>         |MA<12>         |   18.923|
+ID<14>         |MA<13>         |   19.019|
+ID<14>         |MA<14>         |   17.371|
+ID<14>         |MA<15>         |   18.260|
+ID<14>         |MA<16>         |   16.957|
+ID<14>         |MA<17>         |   17.044|
+ID<14>         |MA<18>         |   17.661|
+ID<14>         |MA<19>         |   16.623|
+ID<14>         |MA<20>         |   17.740|
+ID<14>         |MA<21>         |   17.147|
+ID<14>         |MA<22>         |   17.577|
+ID<14>         |MA<23>         |   17.156|
+ID<14>         |MA<24>         |   17.070|
+ID<14>         |MA<25>         |   17.393|
+ID<14>         |MA<26>         |   19.436|
+ID<14>         |MA<27>         |   16.567|
+ID<14>         |MA<28>         |   17.923|
+ID<14>         |MA<29>         |   18.385|
+ID<14>         |MA<30>         |   18.574|
+ID<14>         |MA<31>         |   19.358|
+ID<14>         |MWD<0>         |   11.411|
+ID<14>         |MWD<1>         |   13.031|
+ID<14>         |MWD<2>         |   11.336|
+ID<14>         |MWD<3>         |   13.034|
+ID<14>         |MWD<4>         |   13.006|
+ID<14>         |MWD<5>         |   12.842|
+ID<14>         |MWD<6>         |   12.949|
+ID<14>         |MWD<7>         |   13.055|
+ID<14>         |MWD<8>         |   12.648|
+ID<14>         |MWD<9>         |   12.468|
+ID<14>         |MWD<10>        |   12.414|
+ID<14>         |MWD<11>        |   12.515|
+ID<14>         |MWD<12>        |   12.496|
+ID<14>         |MWD<13>        |   12.306|
+ID<14>         |MWD<14>        |   12.414|
+ID<14>         |MWD<15>        |   12.197|
+ID<14>         |MWD<16>        |   12.320|
+ID<14>         |MWD<17>        |   12.979|
+ID<14>         |MWD<18>        |   13.193|
+ID<14>         |MWD<19>        |   12.226|
+ID<14>         |MWD<20>        |   12.288|
+ID<14>         |MWD<21>        |   11.950|
+ID<14>         |MWD<22>        |   12.071|
+ID<14>         |MWD<23>        |   12.056|
+ID<14>         |MWD<24>        |   11.919|
+ID<14>         |MWD<25>        |   11.796|
+ID<14>         |MWD<26>        |   11.663|
+ID<14>         |MWD<27>        |   11.934|
+ID<14>         |MWD<28>        |   11.361|
+ID<14>         |MWD<29>        |   11.735|
+ID<14>         |MWD<30>        |   10.981|
+ID<14>         |MWD<31>        |   10.885|
+ID<15>         |MA<0>          |   20.503|
+ID<15>         |MA<1>          |   20.494|
+ID<15>         |MA<2>          |   21.236|
+ID<15>         |MA<3>          |   19.602|
+ID<15>         |MA<4>          |   18.467|
+ID<15>         |MA<5>          |   17.803|
+ID<15>         |MA<6>          |   19.121|
+ID<15>         |MA<7>          |   18.539|
+ID<15>         |MA<8>          |   19.617|
+ID<15>         |MA<9>          |   17.822|
+ID<15>         |MA<10>         |   20.030|
+ID<15>         |MA<11>         |   19.079|
+ID<15>         |MA<12>         |   20.151|
+ID<15>         |MA<13>         |   20.247|
+ID<15>         |MA<14>         |   18.599|
+ID<15>         |MA<15>         |   19.488|
+ID<15>         |MA<16>         |   18.185|
+ID<15>         |MA<17>         |   18.272|
+ID<15>         |MA<18>         |   18.889|
+ID<15>         |MA<19>         |   17.851|
+ID<15>         |MA<20>         |   18.968|
+ID<15>         |MA<21>         |   18.375|
+ID<15>         |MA<22>         |   18.805|
+ID<15>         |MA<23>         |   18.384|
+ID<15>         |MA<24>         |   18.298|
+ID<15>         |MA<25>         |   18.621|
+ID<15>         |MA<26>         |   20.664|
+ID<15>         |MA<27>         |   17.795|
+ID<15>         |MA<28>         |   19.151|
+ID<15>         |MA<29>         |   19.613|
+ID<15>         |MA<30>         |   19.802|
+ID<15>         |MA<31>         |   20.586|
+ID<15>         |MWD<0>         |   12.639|
+ID<15>         |MWD<1>         |   14.259|
+ID<15>         |MWD<2>         |   12.564|
+ID<15>         |MWD<3>         |   14.262|
+ID<15>         |MWD<4>         |   14.234|
+ID<15>         |MWD<5>         |   14.070|
+ID<15>         |MWD<6>         |   14.177|
+ID<15>         |MWD<7>         |   14.283|
+ID<15>         |MWD<8>         |   13.876|
+ID<15>         |MWD<9>         |   13.696|
+ID<15>         |MWD<10>        |   13.642|
+ID<15>         |MWD<11>        |   13.743|
+ID<15>         |MWD<12>        |   13.724|
+ID<15>         |MWD<13>        |   13.534|
+ID<15>         |MWD<14>        |   13.642|
+ID<15>         |MWD<15>        |   13.425|
+ID<15>         |MWD<16>        |   13.548|
+ID<15>         |MWD<17>        |   14.207|
+ID<15>         |MWD<18>        |   14.421|
+ID<15>         |MWD<19>        |   13.454|
+ID<15>         |MWD<20>        |   13.516|
+ID<15>         |MWD<21>        |   13.178|
+ID<15>         |MWD<22>        |   13.299|
+ID<15>         |MWD<23>        |   13.284|
+ID<15>         |MWD<24>        |   13.147|
+ID<15>         |MWD<25>        |   13.024|
+ID<15>         |MWD<26>        |   12.891|
+ID<15>         |MWD<27>        |   13.162|
+ID<15>         |MWD<28>        |   12.589|
+ID<15>         |MWD<29>        |   12.963|
+ID<15>         |MWD<30>        |   12.209|
+ID<15>         |MWD<31>        |   12.113|
+ID<16>         |MA<0>          |   20.569|
+ID<16>         |MA<1>          |   19.961|
+ID<16>         |MA<2>          |   19.413|
+ID<16>         |MA<3>          |   19.371|
+ID<16>         |MA<4>          |   19.171|
+ID<16>         |MA<5>          |   18.656|
+ID<16>         |MA<6>          |   18.793|
+ID<16>         |MA<7>          |   20.152|
+ID<16>         |MA<8>          |   20.461|
+ID<16>         |MA<9>          |   19.346|
+ID<16>         |MA<10>         |   19.169|
+ID<16>         |MA<11>         |   19.067|
+ID<16>         |MA<12>         |   20.369|
+ID<16>         |MA<13>         |   20.147|
+ID<16>         |MA<14>         |   17.771|
+ID<16>         |MA<15>         |   20.108|
+ID<16>         |MA<16>         |   18.251|
+ID<16>         |MA<17>         |   19.170|
+ID<16>         |MA<18>         |   17.941|
+ID<16>         |MA<19>         |   18.698|
+ID<16>         |MA<20>         |   18.629|
+ID<16>         |MA<21>         |   18.657|
+ID<16>         |MA<22>         |   18.871|
+ID<16>         |MA<23>         |   19.676|
+ID<16>         |MA<24>         |   19.563|
+ID<16>         |MA<25>         |   18.687|
+ID<16>         |MA<26>         |   19.803|
+ID<16>         |MA<27>         |   18.443|
+ID<16>         |MA<28>         |   19.822|
+ID<16>         |MA<29>         |   19.135|
+ID<16>         |MA<30>         |   18.974|
+ID<16>         |MA<31>         |   21.268|
+ID<17>         |MA<0>          |   18.866|
+ID<17>         |MA<1>          |   18.258|
+ID<17>         |MA<2>          |   17.710|
+ID<17>         |MA<3>          |   17.668|
+ID<17>         |MA<4>          |   17.468|
+ID<17>         |MA<5>          |   16.953|
+ID<17>         |MA<6>          |   17.090|
+ID<17>         |MA<7>          |   18.449|
+ID<17>         |MA<8>          |   18.758|
+ID<17>         |MA<9>          |   17.643|
+ID<17>         |MA<10>         |   17.466|
+ID<17>         |MA<11>         |   17.364|
+ID<17>         |MA<12>         |   18.666|
+ID<17>         |MA<13>         |   18.444|
+ID<17>         |MA<14>         |   16.068|
+ID<17>         |MA<15>         |   18.405|
+ID<17>         |MA<16>         |   16.548|
+ID<17>         |MA<17>         |   17.467|
+ID<17>         |MA<18>         |   16.238|
+ID<17>         |MA<19>         |   16.995|
+ID<17>         |MA<20>         |   16.926|
+ID<17>         |MA<21>         |   16.954|
+ID<17>         |MA<22>         |   17.168|
+ID<17>         |MA<23>         |   17.973|
+ID<17>         |MA<24>         |   17.860|
+ID<17>         |MA<25>         |   16.984|
+ID<17>         |MA<26>         |   18.100|
+ID<17>         |MA<27>         |   16.740|
+ID<17>         |MA<28>         |   18.119|
+ID<17>         |MA<29>         |   17.432|
+ID<17>         |MA<30>         |   17.271|
+ID<17>         |MA<31>         |   19.565|
+ID<18>         |MA<0>          |   19.334|
+ID<18>         |MA<1>          |   18.988|
+ID<18>         |MA<2>          |   18.440|
+ID<18>         |MA<3>          |   17.699|
+ID<18>         |MA<4>          |   18.198|
+ID<18>         |MA<5>          |   17.683|
+ID<18>         |MA<6>          |   17.820|
+ID<18>         |MA<7>          |   19.179|
+ID<18>         |MA<8>          |   19.488|
+ID<18>         |MA<9>          |   18.373|
+ID<18>         |MA<10>         |   17.583|
+ID<18>         |MA<11>         |   18.094|
+ID<18>         |MA<12>         |   19.106|
+ID<18>         |MA<13>         |   19.174|
+ID<18>         |MA<14>         |   16.664|
+ID<18>         |MA<15>         |   18.305|
+ID<18>         |MA<16>         |   17.262|
+ID<18>         |MA<17>         |   18.197|
+ID<18>         |MA<18>         |   16.968|
+ID<18>         |MA<19>         |   17.725|
+ID<18>         |MA<20>         |   17.656|
+ID<18>         |MA<21>         |   17.684|
+ID<18>         |MA<22>         |   17.636|
+ID<18>         |MA<23>         |   18.703|
+ID<18>         |MA<24>         |   18.590|
+ID<18>         |MA<25>         |   17.452|
+ID<18>         |MA<26>         |   18.217|
+ID<18>         |MA<27>         |   17.470|
+ID<18>         |MA<28>         |   18.849|
+ID<18>         |MA<29>         |   18.162|
+ID<18>         |MA<30>         |   17.739|
+ID<18>         |MA<31>         |   19.258|
+ID<19>         |MA<0>          |   19.304|
+ID<19>         |MA<1>          |   18.958|
+ID<19>         |MA<2>          |   18.410|
+ID<19>         |MA<3>          |   17.669|
+ID<19>         |MA<4>          |   18.168|
+ID<19>         |MA<5>          |   17.653|
+ID<19>         |MA<6>          |   17.790|
+ID<19>         |MA<7>          |   19.149|
+ID<19>         |MA<8>          |   19.458|
+ID<19>         |MA<9>          |   18.343|
+ID<19>         |MA<10>         |   17.553|
+ID<19>         |MA<11>         |   18.064|
+ID<19>         |MA<12>         |   19.076|
+ID<19>         |MA<13>         |   19.144|
+ID<19>         |MA<14>         |   16.634|
+ID<19>         |MA<15>         |   18.275|
+ID<19>         |MA<16>         |   17.232|
+ID<19>         |MA<17>         |   18.167|
+ID<19>         |MA<18>         |   16.938|
+ID<19>         |MA<19>         |   17.695|
+ID<19>         |MA<20>         |   17.626|
+ID<19>         |MA<21>         |   17.654|
+ID<19>         |MA<22>         |   17.606|
+ID<19>         |MA<23>         |   18.673|
+ID<19>         |MA<24>         |   18.560|
+ID<19>         |MA<25>         |   17.422|
+ID<19>         |MA<26>         |   18.187|
+ID<19>         |MA<27>         |   17.440|
+ID<19>         |MA<28>         |   18.819|
+ID<19>         |MA<29>         |   18.132|
+ID<19>         |MA<30>         |   17.709|
+ID<19>         |MA<31>         |   19.228|
+ID<20>         |MA<0>          |   18.340|
+ID<20>         |MA<1>          |   17.994|
+ID<20>         |MA<2>          |   17.446|
+ID<20>         |MA<3>          |   16.705|
+ID<20>         |MA<4>          |   17.204|
+ID<20>         |MA<5>          |   16.689|
+ID<20>         |MA<6>          |   16.826|
+ID<20>         |MA<7>          |   18.185|
+ID<20>         |MA<8>          |   18.494|
+ID<20>         |MA<9>          |   17.379|
+ID<20>         |MA<10>         |   16.589|
+ID<20>         |MA<11>         |   17.100|
+ID<20>         |MA<12>         |   18.112|
+ID<20>         |MA<13>         |   18.180|
+ID<20>         |MA<14>         |   15.670|
+ID<20>         |MA<15>         |   17.311|
+ID<20>         |MA<16>         |   16.268|
+ID<20>         |MA<17>         |   17.203|
+ID<20>         |MA<18>         |   15.974|
+ID<20>         |MA<19>         |   16.731|
+ID<20>         |MA<20>         |   16.662|
+ID<20>         |MA<21>         |   16.690|
+ID<20>         |MA<22>         |   16.642|
+ID<20>         |MA<23>         |   17.709|
+ID<20>         |MA<24>         |   17.596|
+ID<20>         |MA<25>         |   16.458|
+ID<20>         |MA<26>         |   17.223|
+ID<20>         |MA<27>         |   16.476|
+ID<20>         |MA<28>         |   17.855|
+ID<20>         |MA<29>         |   17.168|
+ID<20>         |MA<30>         |   16.745|
+ID<20>         |MA<31>         |   18.264|
+ID<21>         |MA<0>          |   18.403|
+ID<21>         |MA<1>          |   17.277|
+ID<21>         |MA<2>          |   18.624|
+ID<21>         |MA<3>          |   17.278|
+ID<21>         |MA<4>          |   17.487|
+ID<21>         |MA<5>          |   15.888|
+ID<21>         |MA<6>          |   17.136|
+ID<21>         |MA<7>          |   17.725|
+ID<21>         |MA<8>          |   18.642|
+ID<21>         |MA<9>          |   16.842|
+ID<21>         |MA<10>         |   16.953|
+ID<21>         |MA<11>         |   17.888|
+ID<21>         |MA<12>         |   17.945|
+ID<21>         |MA<13>         |   17.956|
+ID<21>         |MA<14>         |   16.216|
+ID<21>         |MA<15>         |   17.270|
+ID<21>         |MA<16>         |   16.893|
+ID<21>         |MA<17>         |   16.445|
+ID<21>         |MA<18>         |   16.130|
+ID<21>         |MA<19>         |   16.271|
+ID<21>         |MA<20>         |   16.439|
+ID<21>         |MA<21>         |   16.275|
+ID<21>         |MA<22>         |   16.705|
+ID<21>         |MA<23>         |   17.009|
+ID<21>         |MA<24>         |   16.726|
+ID<21>         |MA<25>         |   16.521|
+ID<21>         |MA<26>         |   17.582|
+ID<21>         |MA<27>         |   16.282|
+ID<21>         |MA<28>         |   17.051|
+ID<21>         |MA<29>         |   17.245|
+ID<21>         |MA<30>         |   16.808|
+ID<21>         |MA<31>         |   18.430|
+ID<21>         |MWD<0>         |   10.739|
+ID<21>         |MWD<1>         |   10.600|
+ID<21>         |MWD<2>         |   10.664|
+ID<21>         |MWD<3>         |   11.763|
+ID<21>         |MWD<4>         |   11.735|
+ID<21>         |MWD<5>         |   11.390|
+ID<21>         |MWD<6>         |   11.497|
+ID<21>         |MWD<7>         |   11.831|
+ID<21>         |MWD<8>         |   11.507|
+ID<21>         |MWD<9>         |   11.327|
+ID<21>         |MWD<10>        |   11.115|
+ID<21>         |MWD<11>        |   11.624|
+ID<21>         |MWD<12>        |   11.605|
+ID<21>         |MWD<13>        |   11.130|
+ID<21>         |MWD<14>        |   11.238|
+ID<21>         |MWD<15>        |   11.005|
+ID<21>         |MWD<16>        |   11.128|
+ID<21>         |MWD<17>        |   11.755|
+ID<21>         |MWD<18>        |   10.762|
+ID<21>         |MWD<19>        |   10.853|
+ID<21>         |MWD<20>        |   10.915|
+ID<21>         |MWD<21>        |   10.994|
+ID<21>         |MWD<22>        |   11.115|
+ID<21>         |MWD<23>        |   10.733|
+ID<21>         |MWD<24>        |   10.596|
+ID<21>         |MWD<25>        |   10.628|
+ID<21>         |MWD<26>        |   10.495|
+ID<21>         |MWD<27>        |   10.635|
+ID<21>         |MWD<28>        |   10.228|
+ID<21>         |MWD<29>        |   10.602|
+ID<21>         |MWD<30>        |   10.239|
+ID<21>         |MWD<31>        |   10.143|
+ID<22>         |MA<0>          |   19.321|
+ID<22>         |MA<1>          |   18.195|
+ID<22>         |MA<2>          |   19.542|
+ID<22>         |MA<3>          |   18.196|
+ID<22>         |MA<4>          |   18.405|
+ID<22>         |MA<5>          |   16.806|
+ID<22>         |MA<6>          |   18.054|
+ID<22>         |MA<7>          |   18.643|
+ID<22>         |MA<8>          |   19.560|
+ID<22>         |MA<9>          |   17.760|
+ID<22>         |MA<10>         |   17.871|
+ID<22>         |MA<11>         |   18.806|
+ID<22>         |MA<12>         |   18.863|
+ID<22>         |MA<13>         |   18.874|
+ID<22>         |MA<14>         |   17.134|
+ID<22>         |MA<15>         |   18.188|
+ID<22>         |MA<16>         |   17.811|
+ID<22>         |MA<17>         |   17.363|
+ID<22>         |MA<18>         |   17.048|
+ID<22>         |MA<19>         |   17.189|
+ID<22>         |MA<20>         |   17.357|
+ID<22>         |MA<21>         |   17.193|
+ID<22>         |MA<22>         |   17.623|
+ID<22>         |MA<23>         |   17.927|
+ID<22>         |MA<24>         |   17.644|
+ID<22>         |MA<25>         |   17.439|
+ID<22>         |MA<26>         |   18.500|
+ID<22>         |MA<27>         |   17.200|
+ID<22>         |MA<28>         |   17.969|
+ID<22>         |MA<29>         |   18.163|
+ID<22>         |MA<30>         |   17.726|
+ID<22>         |MA<31>         |   19.348|
+ID<22>         |MWD<0>         |   11.657|
+ID<22>         |MWD<1>         |   11.518|
+ID<22>         |MWD<2>         |   11.582|
+ID<22>         |MWD<3>         |   12.681|
+ID<22>         |MWD<4>         |   12.653|
+ID<22>         |MWD<5>         |   12.308|
+ID<22>         |MWD<6>         |   12.415|
+ID<22>         |MWD<7>         |   12.749|
+ID<22>         |MWD<8>         |   12.425|
+ID<22>         |MWD<9>         |   12.245|
+ID<22>         |MWD<10>        |   12.033|
+ID<22>         |MWD<11>        |   12.542|
+ID<22>         |MWD<12>        |   12.523|
+ID<22>         |MWD<13>        |   12.048|
+ID<22>         |MWD<14>        |   12.156|
+ID<22>         |MWD<15>        |   11.923|
+ID<22>         |MWD<16>        |   12.046|
+ID<22>         |MWD<17>        |   12.673|
+ID<22>         |MWD<18>        |   11.680|
+ID<22>         |MWD<19>        |   11.771|
+ID<22>         |MWD<20>        |   11.833|
+ID<22>         |MWD<21>        |   11.912|
+ID<22>         |MWD<22>        |   12.033|
+ID<22>         |MWD<23>        |   11.651|
+ID<22>         |MWD<24>        |   11.514|
+ID<22>         |MWD<25>        |   11.546|
+ID<22>         |MWD<26>        |   11.413|
+ID<22>         |MWD<27>        |   11.553|
+ID<22>         |MWD<28>        |   11.146|
+ID<22>         |MWD<29>        |   11.520|
+ID<22>         |MWD<30>        |   11.157|
+ID<22>         |MWD<31>        |   11.061|
+ID<23>         |MA<0>          |   18.852|
+ID<23>         |MA<1>          |   17.726|
+ID<23>         |MA<2>          |   19.073|
+ID<23>         |MA<3>          |   17.727|
+ID<23>         |MA<4>          |   17.936|
+ID<23>         |MA<5>          |   16.337|
+ID<23>         |MA<6>          |   17.585|
+ID<23>         |MA<7>          |   18.174|
+ID<23>         |MA<8>          |   19.091|
+ID<23>         |MA<9>          |   17.291|
+ID<23>         |MA<10>         |   17.402|
+ID<23>         |MA<11>         |   18.337|
+ID<23>         |MA<12>         |   18.394|
+ID<23>         |MA<13>         |   18.405|
+ID<23>         |MA<14>         |   16.665|
+ID<23>         |MA<15>         |   17.719|
+ID<23>         |MA<16>         |   17.342|
+ID<23>         |MA<17>         |   16.894|
+ID<23>         |MA<18>         |   16.579|
+ID<23>         |MA<19>         |   16.720|
+ID<23>         |MA<20>         |   16.888|
+ID<23>         |MA<21>         |   16.724|
+ID<23>         |MA<22>         |   17.154|
+ID<23>         |MA<23>         |   17.458|
+ID<23>         |MA<24>         |   17.175|
+ID<23>         |MA<25>         |   16.970|
+ID<23>         |MA<26>         |   18.031|
+ID<23>         |MA<27>         |   16.731|
+ID<23>         |MA<28>         |   17.500|
+ID<23>         |MA<29>         |   17.694|
+ID<23>         |MA<30>         |   17.257|
+ID<23>         |MA<31>         |   18.879|
+ID<23>         |MWD<0>         |   11.188|
+ID<23>         |MWD<1>         |   11.049|
+ID<23>         |MWD<2>         |   11.113|
+ID<23>         |MWD<3>         |   12.212|
+ID<23>         |MWD<4>         |   12.184|
+ID<23>         |MWD<5>         |   11.839|
+ID<23>         |MWD<6>         |   11.946|
+ID<23>         |MWD<7>         |   12.280|
+ID<23>         |MWD<8>         |   11.956|
+ID<23>         |MWD<9>         |   11.776|
+ID<23>         |MWD<10>        |   11.564|
+ID<23>         |MWD<11>        |   12.073|
+ID<23>         |MWD<12>        |   12.054|
+ID<23>         |MWD<13>        |   11.579|
+ID<23>         |MWD<14>        |   11.687|
+ID<23>         |MWD<15>        |   11.454|
+ID<23>         |MWD<16>        |   11.577|
+ID<23>         |MWD<17>        |   12.204|
+ID<23>         |MWD<18>        |   11.211|
+ID<23>         |MWD<19>        |   11.302|
+ID<23>         |MWD<20>        |   11.364|
+ID<23>         |MWD<21>        |   11.443|
+ID<23>         |MWD<22>        |   11.564|
+ID<23>         |MWD<23>        |   11.182|
+ID<23>         |MWD<24>        |   11.045|
+ID<23>         |MWD<25>        |   11.077|
+ID<23>         |MWD<26>        |   10.944|
+ID<23>         |MWD<27>        |   11.084|
+ID<23>         |MWD<28>        |   10.677|
+ID<23>         |MWD<29>        |   11.051|
+ID<23>         |MWD<30>        |   10.688|
+ID<23>         |MWD<31>        |   10.592|
+ID<24>         |MA<0>          |   18.866|
+ID<24>         |MA<1>          |   17.740|
+ID<24>         |MA<2>          |   19.087|
+ID<24>         |MA<3>          |   17.741|
+ID<24>         |MA<4>          |   17.950|
+ID<24>         |MA<5>          |   16.351|
+ID<24>         |MA<6>          |   17.599|
+ID<24>         |MA<7>          |   18.188|
+ID<24>         |MA<8>          |   19.105|
+ID<24>         |MA<9>          |   17.305|
+ID<24>         |MA<10>         |   17.416|
+ID<24>         |MA<11>         |   18.351|
+ID<24>         |MA<12>         |   18.408|
+ID<24>         |MA<13>         |   18.419|
+ID<24>         |MA<14>         |   16.679|
+ID<24>         |MA<15>         |   17.733|
+ID<24>         |MA<16>         |   17.356|
+ID<24>         |MA<17>         |   16.908|
+ID<24>         |MA<18>         |   16.593|
+ID<24>         |MA<19>         |   16.734|
+ID<24>         |MA<20>         |   16.902|
+ID<24>         |MA<21>         |   16.738|
+ID<24>         |MA<22>         |   17.168|
+ID<24>         |MA<23>         |   17.472|
+ID<24>         |MA<24>         |   17.189|
+ID<24>         |MA<25>         |   16.984|
+ID<24>         |MA<26>         |   18.045|
+ID<24>         |MA<27>         |   16.745|
+ID<24>         |MA<28>         |   17.514|
+ID<24>         |MA<29>         |   17.708|
+ID<24>         |MA<30>         |   17.271|
+ID<24>         |MA<31>         |   18.893|
+ID<24>         |MWD<0>         |   11.202|
+ID<24>         |MWD<1>         |   11.063|
+ID<24>         |MWD<2>         |   11.127|
+ID<24>         |MWD<3>         |   12.226|
+ID<24>         |MWD<4>         |   12.198|
+ID<24>         |MWD<5>         |   11.853|
+ID<24>         |MWD<6>         |   11.960|
+ID<24>         |MWD<7>         |   12.294|
+ID<24>         |MWD<8>         |   11.970|
+ID<24>         |MWD<9>         |   11.790|
+ID<24>         |MWD<10>        |   11.578|
+ID<24>         |MWD<11>        |   12.087|
+ID<24>         |MWD<12>        |   12.068|
+ID<24>         |MWD<13>        |   11.593|
+ID<24>         |MWD<14>        |   11.701|
+ID<24>         |MWD<15>        |   11.468|
+ID<24>         |MWD<16>        |   11.591|
+ID<24>         |MWD<17>        |   12.218|
+ID<24>         |MWD<18>        |   11.225|
+ID<24>         |MWD<19>        |   11.316|
+ID<24>         |MWD<20>        |   11.378|
+ID<24>         |MWD<21>        |   11.457|
+ID<24>         |MWD<22>        |   11.578|
+ID<24>         |MWD<23>        |   11.196|
+ID<24>         |MWD<24>        |   11.059|
+ID<24>         |MWD<25>        |   11.091|
+ID<24>         |MWD<26>        |   10.958|
+ID<24>         |MWD<27>        |   11.098|
+ID<24>         |MWD<28>        |   10.691|
+ID<24>         |MWD<29>        |   11.065|
+ID<24>         |MWD<30>        |   10.702|
+ID<24>         |MWD<31>        |   10.606|
+ID<25>         |MA<0>          |   18.552|
+ID<25>         |MA<1>          |   17.426|
+ID<25>         |MA<2>          |   18.773|
+ID<25>         |MA<3>          |   17.427|
+ID<25>         |MA<4>          |   17.636|
+ID<25>         |MA<5>          |   16.037|
+ID<25>         |MA<6>          |   17.285|
+ID<25>         |MA<7>          |   17.874|
+ID<25>         |MA<8>          |   18.791|
+ID<25>         |MA<9>          |   16.991|
+ID<25>         |MA<10>         |   17.102|
+ID<25>         |MA<11>         |   18.037|
+ID<25>         |MA<12>         |   18.094|
+ID<25>         |MA<13>         |   18.105|
+ID<25>         |MA<14>         |   16.365|
+ID<25>         |MA<15>         |   17.419|
+ID<25>         |MA<16>         |   17.042|
+ID<25>         |MA<17>         |   16.594|
+ID<25>         |MA<18>         |   16.279|
+ID<25>         |MA<19>         |   16.420|
+ID<25>         |MA<20>         |   16.588|
+ID<25>         |MA<21>         |   16.424|
+ID<25>         |MA<22>         |   16.854|
+ID<25>         |MA<23>         |   17.158|
+ID<25>         |MA<24>         |   16.875|
+ID<25>         |MA<25>         |   16.670|
+ID<25>         |MA<26>         |   17.731|
+ID<25>         |MA<27>         |   16.431|
+ID<25>         |MA<28>         |   17.200|
+ID<25>         |MA<29>         |   17.394|
+ID<25>         |MA<30>         |   16.957|
+ID<25>         |MA<31>         |   18.579|
+ID<25>         |MWD<0>         |   10.888|
+ID<25>         |MWD<1>         |   10.749|
+ID<25>         |MWD<2>         |   10.813|
+ID<25>         |MWD<3>         |   11.912|
+ID<25>         |MWD<4>         |   11.884|
+ID<25>         |MWD<5>         |   11.539|
+ID<25>         |MWD<6>         |   11.646|
+ID<25>         |MWD<7>         |   11.980|
+ID<25>         |MWD<8>         |   11.656|
+ID<25>         |MWD<9>         |   11.476|
+ID<25>         |MWD<10>        |   11.264|
+ID<25>         |MWD<11>        |   11.773|
+ID<25>         |MWD<12>        |   11.754|
+ID<25>         |MWD<13>        |   11.279|
+ID<25>         |MWD<14>        |   11.387|
+ID<25>         |MWD<15>        |   11.154|
+ID<25>         |MWD<16>        |   11.277|
+ID<25>         |MWD<17>        |   11.904|
+ID<25>         |MWD<18>        |   10.911|
+ID<25>         |MWD<19>        |   11.002|
+ID<25>         |MWD<20>        |   11.064|
+ID<25>         |MWD<21>        |   11.143|
+ID<25>         |MWD<22>        |   11.264|
+ID<25>         |MWD<23>        |   10.882|
+ID<25>         |MWD<24>        |   10.745|
+ID<25>         |MWD<25>        |   10.777|
+ID<25>         |MWD<26>        |   10.644|
+ID<25>         |MWD<27>        |   10.784|
+ID<25>         |MWD<28>        |   10.377|
+ID<25>         |MWD<29>        |   10.751|
+ID<25>         |MWD<30>        |   10.388|
+ID<25>         |MWD<31>        |   10.292|
+ID<26>         |MA<0>          |   20.468|
+ID<26>         |MA<1>          |   19.785|
+ID<26>         |MA<2>          |   20.577|
+ID<26>         |MA<3>          |   19.231|
+ID<26>         |MA<4>          |   19.434|
+ID<26>         |MA<5>          |   17.984|
+ID<26>         |MA<6>          |   18.530|
+ID<26>         |MA<7>          |   19.823|
+ID<26>         |MA<8>          |   20.584|
+ID<26>         |MA<9>          |   18.789|
+ID<26>         |MA<10>         |   19.321|
+ID<26>         |MA<11>         |   19.986|
+ID<26>         |MA<12>         |   19.818|
+ID<26>         |MA<13>         |   19.903|
+ID<26>         |MA<14>         |   17.890|
+ID<26>         |MA<15>         |   19.557|
+ID<26>         |MA<16>         |   18.821|
+ID<26>         |MA<17>         |   19.394|
+ID<26>         |MA<18>         |   18.180|
+ID<26>         |MA<19>         |   19.253|
+ID<26>         |MA<20>         |   20.682|
+ID<26>         |MA<21>         |   19.254|
+ID<26>         |MA<22>         |   19.472|
+ID<26>         |MA<23>         |   19.145|
+ID<26>         |MA<24>         |   18.891|
+ID<26>         |MA<25>         |   18.586|
+ID<26>         |MA<26>         |   19.955|
+ID<26>         |MA<27>         |   18.383|
+ID<26>         |MA<28>         |   19.150|
+ID<26>         |MA<29>         |   18.904|
+ID<26>         |MA<30>         |   19.093|
+ID<26>         |MA<31>         |   20.717|
+ID<26>         |MOE            |   10.798|
+ID<26>         |MWD<0>         |   13.330|
+ID<26>         |MWD<1>         |   12.832|
+ID<26>         |MWD<2>         |   13.255|
+ID<26>         |MWD<3>         |   14.454|
+ID<26>         |MWD<4>         |   14.426|
+ID<26>         |MWD<5>         |   14.897|
+ID<26>         |MWD<6>         |   15.004|
+ID<26>         |MWD<7>         |   15.216|
+ID<26>         |MWD<8>         |   14.679|
+ID<26>         |MWD<9>         |   14.499|
+ID<26>         |MWD<10>        |   13.805|
+ID<26>         |MWD<11>        |   14.356|
+ID<26>         |MWD<12>        |   14.337|
+ID<26>         |MWD<13>        |   14.202|
+ID<26>         |MWD<14>        |   14.310|
+ID<26>         |MWD<15>        |   13.577|
+ID<26>         |MWD<16>        |   13.700|
+ID<26>         |MWD<17>        |   15.140|
+ID<26>         |MWD<18>        |   12.994|
+ID<26>         |MWD<19>        |   13.483|
+ID<26>         |MWD<20>        |   13.545|
+ID<26>         |MWD<21>        |   13.610|
+ID<26>         |MWD<22>        |   13.731|
+ID<26>         |MWD<23>        |   13.615|
+ID<26>         |MWD<24>        |   13.478|
+ID<26>         |MWD<25>        |   13.587|
+ID<26>         |MWD<26>        |   13.454|
+ID<26>         |MWD<27>        |   13.325|
+ID<26>         |MWD<28>        |   13.487|
+ID<26>         |MWD<29>        |   13.861|
+ID<26>         |MWD<30>        |   13.125|
+ID<26>         |MWD<31>        |   13.029|
+ID<26>         |MWR            |   12.583|
+ID<27>         |MA<0>          |   20.503|
+ID<27>         |MA<1>          |   19.614|
+ID<27>         |MA<2>          |   20.356|
+ID<27>         |MA<3>          |   18.867|
+ID<27>         |MA<4>          |   19.070|
+ID<27>         |MA<5>          |   17.792|
+ID<27>         |MA<6>          |   18.241|
+ID<27>         |MA<7>          |   19.459|
+ID<27>         |MA<8>          |   20.220|
+ID<27>         |MA<9>          |   18.482|
+ID<27>         |MA<10>         |   19.150|
+ID<27>         |MA<11>         |   19.622|
+ID<27>         |MA<12>         |   19.626|
+ID<27>         |MA<13>         |   19.539|
+ID<27>         |MA<14>         |   17.719|
+ID<27>         |MA<15>         |   19.365|
+ID<27>         |MA<16>         |   18.457|
+ID<27>         |MA<17>         |   18.630|
+ID<27>         |MA<18>         |   18.009|
+ID<27>         |MA<19>         |   18.489|
+ID<27>         |MA<20>         |   19.918|
+ID<27>         |MA<21>         |   18.490|
+ID<27>         |MA<22>         |   18.805|
+ID<27>         |MA<23>         |   18.591|
+ID<27>         |MA<24>         |   18.699|
+ID<27>         |MA<25>         |   18.621|
+ID<27>         |MA<26>         |   19.784|
+ID<27>         |MA<27>         |   18.053|
+ID<27>         |MA<28>         |   19.151|
+ID<27>         |MA<29>         |   18.733|
+ID<27>         |MA<30>         |   18.922|
+ID<27>         |MA<31>         |   20.525|
+ID<27>         |MOE            |   11.084|
+ID<27>         |MWD<0>         |   12.966|
+ID<27>         |MWD<1>         |   12.468|
+ID<27>         |MWD<2>         |   12.891|
+ID<27>         |MWD<3>         |   14.090|
+ID<27>         |MWD<4>         |   14.062|
+ID<27>         |MWD<5>         |   14.533|
+ID<27>         |MWD<6>         |   14.640|
+ID<27>         |MWD<7>         |   14.852|
+ID<27>         |MWD<8>         |   14.315|
+ID<27>         |MWD<9>         |   14.135|
+ID<27>         |MWD<10>        |   13.441|
+ID<27>         |MWD<11>        |   13.992|
+ID<27>         |MWD<12>        |   13.973|
+ID<27>         |MWD<13>        |   13.838|
+ID<27>         |MWD<14>        |   13.946|
+ID<27>         |MWD<15>        |   13.213|
+ID<27>         |MWD<16>        |   13.336|
+ID<27>         |MWD<17>        |   14.776|
+ID<27>         |MWD<18>        |   12.630|
+ID<27>         |MWD<19>        |   13.119|
+ID<27>         |MWD<20>        |   13.181|
+ID<27>         |MWD<21>        |   13.246|
+ID<27>         |MWD<22>        |   13.367|
+ID<27>         |MWD<23>        |   13.251|
+ID<27>         |MWD<24>        |   13.114|
+ID<27>         |MWD<25>        |   13.223|
+ID<27>         |MWD<26>        |   13.090|
+ID<27>         |MWD<27>        |   12.961|
+ID<27>         |MWD<28>        |   13.123|
+ID<27>         |MWD<29>        |   13.497|
+ID<27>         |MWD<30>        |   12.761|
+ID<27>         |MWD<31>        |   12.665|
+ID<27>         |MWR            |   12.219|
+ID<28>         |MA<0>          |   19.575|
+ID<28>         |MA<1>          |   19.037|
+ID<28>         |MA<2>          |   19.829|
+ID<28>         |MA<3>          |   18.483|
+ID<28>         |MA<4>          |   18.686|
+ID<28>         |MA<5>          |   17.311|
+ID<28>         |MA<6>          |   17.782|
+ID<28>         |MA<7>          |   19.075|
+ID<28>         |MA<8>          |   19.836|
+ID<28>         |MA<9>          |   18.041|
+ID<28>         |MA<10>         |   18.573|
+ID<28>         |MA<11>         |   19.238|
+ID<28>         |MA<12>         |   19.145|
+ID<28>         |MA<13>         |   19.155|
+ID<28>         |MA<14>         |   17.142|
+ID<28>         |MA<15>         |   18.884|
+ID<28>         |MA<16>         |   18.073|
+ID<28>         |MA<17>         |   17.948|
+ID<28>         |MA<18>         |   17.432|
+ID<28>         |MA<19>         |   17.807|
+ID<28>         |MA<20>         |   19.236|
+ID<28>         |MA<21>         |   17.808|
+ID<28>         |MA<22>         |   18.026|
+ID<28>         |MA<23>         |   18.207|
+ID<28>         |MA<24>         |   18.218|
+ID<28>         |MA<25>         |   17.693|
+ID<28>         |MA<26>         |   19.207|
+ID<28>         |MA<27>         |   17.632|
+ID<28>         |MA<28>         |   18.477|
+ID<28>         |MA<29>         |   18.156|
+ID<28>         |MA<30>         |   18.345|
+ID<28>         |MA<31>         |   20.044|
+ID<28>         |MOE            |   10.067|
+ID<28>         |MWD<0>         |   12.582|
+ID<28>         |MWD<1>         |   12.084|
+ID<28>         |MWD<2>         |   12.507|
+ID<28>         |MWD<3>         |   13.706|
+ID<28>         |MWD<4>         |   13.678|
+ID<28>         |MWD<5>         |   14.149|
+ID<28>         |MWD<6>         |   14.256|
+ID<28>         |MWD<7>         |   14.468|
+ID<28>         |MWD<8>         |   13.931|
+ID<28>         |MWD<9>         |   13.751|
+ID<28>         |MWD<10>        |   13.057|
+ID<28>         |MWD<11>        |   13.608|
+ID<28>         |MWD<12>        |   13.589|
+ID<28>         |MWD<13>        |   13.454|
+ID<28>         |MWD<14>        |   13.562|
+ID<28>         |MWD<15>        |   12.829|
+ID<28>         |MWD<16>        |   12.952|
+ID<28>         |MWD<17>        |   14.392|
+ID<28>         |MWD<18>        |   12.246|
+ID<28>         |MWD<19>        |   12.735|
+ID<28>         |MWD<20>        |   12.797|
+ID<28>         |MWD<21>        |   12.862|
+ID<28>         |MWD<22>        |   12.983|
+ID<28>         |MWD<23>        |   12.867|
+ID<28>         |MWD<24>        |   12.730|
+ID<28>         |MWD<25>        |   12.839|
+ID<28>         |MWD<26>        |   12.706|
+ID<28>         |MWD<27>        |   12.577|
+ID<28>         |MWD<28>        |   12.739|
+ID<28>         |MWD<29>        |   13.113|
+ID<28>         |MWD<30>        |   12.377|
+ID<28>         |MWD<31>        |   12.281|
+ID<28>         |MWR            |   11.835|
+ID<29>         |MA<0>          |   20.057|
+ID<29>         |MA<1>          |   19.168|
+ID<29>         |MA<2>          |   19.910|
+ID<29>         |MA<3>          |   18.460|
+ID<29>         |MA<4>          |   18.663|
+ID<29>         |MA<5>          |   17.492|
+ID<29>         |MA<6>          |   17.795|
+ID<29>         |MA<7>          |   19.052|
+ID<29>         |MA<8>          |   19.813|
+ID<29>         |MA<9>          |   18.182|
+ID<29>         |MA<10>         |   18.704|
+ID<29>         |MA<11>         |   19.215|
+ID<29>         |MA<12>         |   19.326|
+ID<29>         |MA<13>         |   19.132|
+ID<29>         |MA<14>         |   17.273|
+ID<29>         |MA<15>         |   19.065|
+ID<29>         |MA<16>         |   18.050|
+ID<29>         |MA<17>         |   18.487|
+ID<29>         |MA<18>         |   17.563|
+ID<29>         |MA<19>         |   18.346|
+ID<29>         |MA<20>         |   19.775|
+ID<29>         |MA<21>         |   18.347|
+ID<29>         |MA<22>         |   18.565|
+ID<29>         |MA<23>         |   18.287|
+ID<29>         |MA<24>         |   18.399|
+ID<29>         |MA<25>         |   18.175|
+ID<29>         |MA<26>         |   19.338|
+ID<29>         |MA<27>         |   17.609|
+ID<29>         |MA<28>         |   18.705|
+ID<29>         |MA<29>         |   18.287|
+ID<29>         |MA<30>         |   18.476|
+ID<29>         |MA<31>         |   20.225|
+ID<29>         |MOE            |   10.040|
+ID<29>         |MWD<0>         |   12.559|
+ID<29>         |MWD<1>         |   12.061|
+ID<29>         |MWD<2>         |   12.484|
+ID<29>         |MWD<3>         |   13.683|
+ID<29>         |MWD<4>         |   13.655|
+ID<29>         |MWD<5>         |   14.126|
+ID<29>         |MWD<6>         |   14.233|
+ID<29>         |MWD<7>         |   14.445|
+ID<29>         |MWD<8>         |   13.908|
+ID<29>         |MWD<9>         |   13.728|
+ID<29>         |MWD<10>        |   13.034|
+ID<29>         |MWD<11>        |   13.585|
+ID<29>         |MWD<12>        |   13.566|
+ID<29>         |MWD<13>        |   13.431|
+ID<29>         |MWD<14>        |   13.539|
+ID<29>         |MWD<15>        |   12.806|
+ID<29>         |MWD<16>        |   12.929|
+ID<29>         |MWD<17>        |   14.369|
+ID<29>         |MWD<18>        |   12.223|
+ID<29>         |MWD<19>        |   12.712|
+ID<29>         |MWD<20>        |   12.774|
+ID<29>         |MWD<21>        |   12.839|
+ID<29>         |MWD<22>        |   12.960|
+ID<29>         |MWD<23>        |   12.844|
+ID<29>         |MWD<24>        |   12.707|
+ID<29>         |MWD<25>        |   12.816|
+ID<29>         |MWD<26>        |   12.683|
+ID<29>         |MWD<27>        |   12.554|
+ID<29>         |MWD<28>        |   12.716|
+ID<29>         |MWD<29>        |   13.090|
+ID<29>         |MWD<30>        |   12.354|
+ID<29>         |MWD<31>        |   12.258|
+ID<29>         |MWR            |   11.812|
+ID<30>         |MA<0>          |   21.318|
+ID<30>         |MA<1>          |   20.429|
+ID<30>         |MA<2>          |   21.171|
+ID<30>         |MA<3>          |   19.537|
+ID<30>         |MA<4>          |   18.822|
+ID<30>         |MA<5>          |   18.537|
+ID<30>         |MA<6>          |   19.056|
+ID<30>         |MA<7>          |   19.919|
+ID<30>         |MA<8>          |   20.117|
+ID<30>         |MA<9>          |   19.227|
+ID<30>         |MA<10>         |   19.965|
+ID<30>         |MA<11>         |   19.374|
+ID<30>         |MA<12>         |   20.371|
+ID<30>         |MA<13>         |   20.182|
+ID<30>         |MA<14>         |   18.534|
+ID<30>         |MA<15>         |   20.110|
+ID<30>         |MA<16>         |   19.000|
+ID<30>         |MA<17>         |   19.051|
+ID<30>         |MA<18>         |   18.824|
+ID<30>         |MA<19>         |   18.666|
+ID<30>         |MA<20>         |   19.137|
+ID<30>         |MA<21>         |   19.190|
+ID<30>         |MA<22>         |   19.620|
+ID<30>         |MA<23>         |   19.332|
+ID<30>         |MA<24>         |   19.444|
+ID<30>         |MA<25>         |   19.436|
+ID<30>         |MA<26>         |   20.599|
+ID<30>         |MA<27>         |   18.868|
+ID<30>         |MA<28>         |   19.966|
+ID<30>         |MA<29>         |   19.548|
+ID<30>         |MA<30>         |   19.737|
+ID<30>         |MA<31>         |   21.270|
+ID<30>         |MOE            |   11.143|
+ID<30>         |MWD<0>         |   12.718|
+ID<30>         |MWD<1>         |   12.220|
+ID<30>         |MWD<2>         |   12.643|
+ID<30>         |MWD<3>         |   13.842|
+ID<30>         |MWD<4>         |   13.814|
+ID<30>         |MWD<5>         |   14.285|
+ID<30>         |MWD<6>         |   14.392|
+ID<30>         |MWD<7>         |   14.604|
+ID<30>         |MWD<8>         |   14.067|
+ID<30>         |MWD<9>         |   13.887|
+ID<30>         |MWD<10>        |   13.193|
+ID<30>         |MWD<11>        |   13.744|
+ID<30>         |MWD<12>        |   13.725|
+ID<30>         |MWD<13>        |   13.590|
+ID<30>         |MWD<14>        |   13.698|
+ID<30>         |MWD<15>        |   12.965|
+ID<30>         |MWD<16>        |   13.088|
+ID<30>         |MWD<17>        |   14.528|
+ID<30>         |MWD<18>        |   12.382|
+ID<30>         |MWD<19>        |   12.871|
+ID<30>         |MWD<20>        |   12.933|
+ID<30>         |MWD<21>        |   12.998|
+ID<30>         |MWD<22>        |   13.119|
+ID<30>         |MWD<23>        |   13.003|
+ID<30>         |MWD<24>        |   12.866|
+ID<30>         |MWD<25>        |   12.975|
+ID<30>         |MWD<26>        |   12.842|
+ID<30>         |MWD<27>        |   12.713|
+ID<30>         |MWD<28>        |   12.875|
+ID<30>         |MWD<29>        |   13.249|
+ID<30>         |MWD<30>        |   12.513|
+ID<30>         |MWD<31>        |   12.417|
+ID<30>         |MWR            |   11.971|
+ID<31>         |MA<0>          |   20.596|
+ID<31>         |MA<1>          |   19.707|
+ID<31>         |MA<2>          |   20.449|
+ID<31>         |MA<3>          |   18.963|
+ID<31>         |MA<4>          |   18.270|
+ID<31>         |MA<5>          |   18.127|
+ID<31>         |MA<6>          |   18.334|
+ID<31>         |MA<7>          |   19.509|
+ID<31>         |MA<8>          |   19.707|
+ID<31>         |MA<9>          |   18.817|
+ID<31>         |MA<10>         |   19.243|
+ID<31>         |MA<11>         |   18.820|
+ID<31>         |MA<12>         |   19.961|
+ID<31>         |MA<13>         |   19.618|
+ID<31>         |MA<14>         |   17.812|
+ID<31>         |MA<15>         |   19.700|
+ID<31>         |MA<16>         |   18.278|
+ID<31>         |MA<17>         |   18.641|
+ID<31>         |MA<18>         |   18.102|
+ID<31>         |MA<19>         |   18.055|
+ID<31>         |MA<20>         |   19.010|
+ID<31>         |MA<21>         |   18.468|
+ID<31>         |MA<22>         |   18.898|
+ID<31>         |MA<23>         |   18.922|
+ID<31>         |MA<24>         |   19.034|
+ID<31>         |MA<25>         |   18.714|
+ID<31>         |MA<26>         |   19.877|
+ID<31>         |MA<27>         |   18.146|
+ID<31>         |MA<28>         |   19.293|
+ID<31>         |MA<29>         |   18.826|
+ID<31>         |MA<30>         |   19.015|
+ID<31>         |MA<31>         |   20.860|
+ID<31>         |MOE            |   10.686|
+ID<31>         |MWD<0>         |   11.965|
+ID<31>         |MWD<1>         |   11.467|
+ID<31>         |MWD<2>         |   11.890|
+ID<31>         |MWD<3>         |   13.089|
+ID<31>         |MWD<4>         |   13.061|
+ID<31>         |MWD<5>         |   13.532|
+ID<31>         |MWD<6>         |   13.639|
+ID<31>         |MWD<7>         |   13.851|
+ID<31>         |MWD<8>         |   13.314|
+ID<31>         |MWD<9>         |   13.134|
+ID<31>         |MWD<10>        |   12.440|
+ID<31>         |MWD<11>        |   12.991|
+ID<31>         |MWD<12>        |   12.972|
+ID<31>         |MWD<13>        |   12.837|
+ID<31>         |MWD<14>        |   12.945|
+ID<31>         |MWD<15>        |   12.212|
+ID<31>         |MWD<16>        |   12.335|
+ID<31>         |MWD<17>        |   13.775|
+ID<31>         |MWD<18>        |   11.629|
+ID<31>         |MWD<19>        |   12.118|
+ID<31>         |MWD<20>        |   12.180|
+ID<31>         |MWD<21>        |   12.245|
+ID<31>         |MWD<22>        |   12.366|
+ID<31>         |MWD<23>        |   12.250|
+ID<31>         |MWD<24>        |   12.113|
+ID<31>         |MWD<25>        |   12.222|
+ID<31>         |MWD<26>        |   12.089|
+ID<31>         |MWD<27>        |   11.960|
+ID<31>         |MWD<28>        |   12.122|
+ID<31>         |MWD<29>        |   12.496|
+ID<31>         |MWD<30>        |   11.760|
+ID<31>         |MWD<31>        |   11.664|
+ID<31>         |MWR            |   11.218|
+IRQ            |MWR            |    6.339|
+RESET          |MWR            |    6.299|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Feb 10 02:49:07 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 241 MB
+
+
+

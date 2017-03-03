@@ -1,0 +1,49 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/TB_BETA_isim_beh.exe -prj F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/TB_BETA_beh.prj work.TB_BETA work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/SHIFT.v" into library work
+Analyzing Verilog file "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/ipcore_dir/DRAM32x32.v" into library work
+Analyzing Verilog file "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/CMP.v" into library work
+Analyzing Verilog file "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/BOOL.v" into library work
+WARNING:HDLCompiler:248 - "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/BOOL.v" Line 31: Block identifier is required on this block
+Analyzing Verilog file "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/ARITH.v" into library work
+Analyzing Verilog file "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/REGFILE.v" into library work
+Analyzing Verilog file "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/PC.v" into library work
+Analyzing Verilog file "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/CTL.v" into library work
+Analyzing Verilog file "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/ALU.v" into library work
+Analyzing Verilog file "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/ipcore_dir/MAIN_DIST_MEM.v" into library work
+Analyzing Verilog file "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/BETA_CORE.v" into library work
+Analyzing Verilog file "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/BETA_TOP.v" into library work
+Analyzing Verilog file "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/TB_BETA.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/BETA_TOP.v" Line 51: Size mismatch in connection of port <dpra>. Formal port size is 10-bit while actual signal size is 11-bit.
+WARNING:HDLCompiler:189 - "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/BETA_TOP.v" Line 71: Size mismatch in connection of port <dpra>. Formal port size is 10-bit while actual signal size is 11-bit.
+WARNING:HDLCompiler:1016 - "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/BETA_CORE.v" Line 94: Port Z is not connected to this instance
+Completed static elaboration
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module MAIN_DIST_MEM
+Compiling module CTL
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module DRAM32x32
+Compiling module REGFILE
+Compiling module PC
+Compiling module SHIFT
+Compiling module MUX4
+Compiling module BOOL
+Compiling module ARITH
+Compiling module CMP
+Compiling module ALU
+Compiling module BETA_CORE
+Compiling module BETA_TOP
+Compiling module TB_BETA
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\TB_BETA_isim_beh.exe.sim\libPortability.dll".
+Compiled 17 Verilog Units
+Built simulation executable F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/TB_BETA_isim_beh.exe
+Fuse Memory Usage: 49176 KB
+Fuse CPU Usage: 952 ms

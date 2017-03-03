@@ -1,0 +1,179 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: TB.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TB.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TB"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-csg324
+
+---- Source Options
+Top Module Name                    : TB
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\REG_FILE_1\REGFILE.v" into library work
+Parsing module <REGFILE>.
+Analyzing Verilog file "F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" into library work
+Parsing module <TB>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <TB>.
+WARNING:HDLCompiler:872 - "F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 28: Using initial value of CLK since it is never assigned
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 1\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000000\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000000\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 2\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000000\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000000\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 3\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000000\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000000\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 4\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000001\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000000\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 5\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000010\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000001\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 6\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000011\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000010\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 7\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000100\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000011\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 8\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000101\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000100\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 9\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000110\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000101\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 10\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000111\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000110\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 11\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000001000\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000111\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 12\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000001001\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000001000\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 13\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000001010\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000001001\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 14\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000001011\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000001010\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 15\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000001100\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000001011\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 16\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000001101\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000001100\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 17\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000001110\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000001101\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 18\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000001111\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000001110\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 19\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000010000\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000001111\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 20\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000010001\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000010000\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 21\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000010010\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000010001\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 22\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000010011\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000010010\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 23\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000010100\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000010011\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 24\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000010101\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000010100\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 25\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000010110\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000010101\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 26\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000010111\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000010110\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 27\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000011000\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000010111\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 28\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000011001\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000011000\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 29\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000011010\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000011001\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 30\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000011011\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000011010\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 31\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000011100\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000011011\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 32\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000011101\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000011100\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 33\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000011110\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000011101\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 34\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000000\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000011110\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 35\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000000\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000000\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 36\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000001\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000011\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 37\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000001\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000000\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 38\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000001\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000100\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 39\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000001\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000010\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 40\nRADATA: 32'b................................\nExpected: 32'b00000000000000000011000000111001\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000001\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 41\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000001\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000010\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 42\nRADATA: 32'b................................\nExpected: 32'b00000000101111000110000101001110\nRBDATA: 32'b................................\nExpected: 32'b00000000101111000110000101001110\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 43\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000001\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000010\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 61. $display Error in case: 44\nRADATA: 32'b................................\nExpected: 32'b00000000000000000000000000000011\nRBDATA: 32'b................................\nExpected: 32'b00000000000000000000000000000011\n
+"F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 726. $display TEST OK\n\nPassed
+WARNING:HDLCompiler:872 - "F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 65: Using initial value of RA2SEL since it is never assigned
+
+Elaborating module <REGFILE>.
+ERROR:HDLCompiler:1654 - "F:\Self learning\FPGA\Projects\REG_FILE_1\REGFILE.v" Line 38: Instantiating <A> from unknown module <SRAM>
+Module REGFILE remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "F:\Self learning\FPGA\Projects\REG_FILE_1\REGFILE.v" Line 21: Empty module <REGFILE> remains a black box.
+WARNING:HDLCompiler:1127 - "F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 51: Assignment to RADATA ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "F:\Self learning\FPGA\Projects\REG_FILE_1\TB.v" Line 52: Assignment to RBDATA ignored, since the identifier is never used
+--> 
+
+Total memory usage is 241864 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,22 @@
+
+
+
+// Instantiate the module
+CTL instance_name (
+    .OP(OP), 
+    .RESET(RESET), 
+    .IRQ(IRQ), 
+    .Z(Z), 
+    .ALUFN(ALUFN), 
+    .ASEL(ASEL), 
+    .BSEL(BSEL), 
+    .MOE(MOE), 
+    .MWR(MWR), 
+    .PCSEL(PCSEL), 
+    .RA2SEL(RA2SEL), 
+    .WASEL(WASEL), 
+    .WDSEL(WDSEL), 
+    .WERF(WERF)
+    );
+
+

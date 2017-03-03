@@ -1,0 +1,1 @@
+xst -intstyle ise -filter "F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter" -ifn "F:/Self learning/FPGA/Projects/BETA_ISE/TB.xst" -ofn "F:/Self learning/FPGA/Projects/BETA_ISE/TB.syr" 

@@ -1,0 +1,5 @@
+verilog work "SHIFT.v"
+verilog work "CMP.v"
+verilog work "BOOL.v"
+verilog work "ARITH.v"
+verilog work "ALU.v"

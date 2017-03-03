@@ -1,0 +1,2 @@
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ../REG_FILE_1 -nt timestamp -i -p xc6slx9-csg324-3 "F:/Self learning/FPGA/Projects/REG_FILE_1/REGFILE.ngc" REGFILE.ngd  
+vhdtdtfi -lang verilog -prj BETA_ISE -o "F:/Self learning/FPGA/Projects/BETA_ISE/REGFILE.tfi" -lib work "F:/Self learning/FPGA/Projects/BETA_ISE//REGFILE.v" -module REGFILE -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

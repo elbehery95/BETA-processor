@@ -1,0 +1,20 @@
+xst -intstyle ise -filter "F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter" -ifn "F:/Self learning/FPGA/Projects/BETA_ISE/BETA_TOP.xst" -ofn "F:/Self learning/FPGA/Projects/BETA_ISE/BETA_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-csg324-3 "BETA_TOP.ngc" BETA_TOP.ngd  
+map -filter "F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter" -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BETA_TOP_map.ncd BETA_TOP.ngd BETA_TOP.pcf 
+par -filter "F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off BETA_TOP_map.ncd BETA_TOP.ncd BETA_TOP.pcf 
+trce -filter {F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter} -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BETA_TOP.twx BETA_TOP.ncd -o BETA_TOP.twr BETA_TOP.pcf 
+xst -intstyle ise -filter "F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter" -ifn "F:/Self learning/FPGA/Projects/BETA_ISE/BETA_TOP.xst" -ofn "F:/Self learning/FPGA/Projects/BETA_ISE/BETA_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-csg324-3 "BETA_TOP.ngc" BETA_TOP.ngd  
+map -filter "F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter" -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BETA_TOP_map.ncd BETA_TOP.ngd BETA_TOP.pcf 
+par -filter "F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off BETA_TOP_map.ncd BETA_TOP.ncd BETA_TOP.pcf 
+trce -filter {F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter} -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BETA_TOP.twx BETA_TOP.ncd -o BETA_TOP.twr BETA_TOP.pcf 
+xst -intstyle ise -filter "F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter" -ifn "F:/Self learning/FPGA/Projects/BETA_ISE/BETA_TOP.xst" -ofn "F:/Self learning/FPGA/Projects/BETA_ISE/BETA_TOP.syr" 
+xst -intstyle ise -filter "F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter" -ifn "F:/Self learning/FPGA/Projects/BETA_ISE/BETA_TOP.xst" -ofn "F:/Self learning/FPGA/Projects/BETA_ISE/BETA_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-csg324-3 "BETA_TOP.ngc" BETA_TOP.ngd  
+map -filter "F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter" -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BETA_TOP_map.ncd BETA_TOP.ngd BETA_TOP.pcf 
+xst -intstyle ise -filter "F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter" -ifn "F:/Self learning/FPGA/Projects/BETA_ISE/BETA_TOP.xst" -ofn "F:/Self learning/FPGA/Projects/BETA_ISE/BETA_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-csg324-3 "BETA_TOP.ngc" BETA_TOP.ngd  
+map -filter "F:/Self learning/FPGA/Projects/BETA_ISE/iseconfig/filter.filter" -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BETA_TOP_map.ncd BETA_TOP.ngd BETA_TOP.pcf 
+xst -intstyle ise -filter "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/iseconfig/filter.filter" -ifn "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/BETA_TOP.xst" -ofn "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/BETA_TOP.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-csg324-3 "BETA_TOP.ngc" BETA_TOP.ngd  
+map -filter "F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/iseconfig/filter.filter" -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BETA_TOP_map.ncd BETA_TOP.ngd BETA_TOP.pcf 

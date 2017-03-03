@@ -1,0 +1,636 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.34 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.34 secs
+ 
+--> Reading design: BETA_TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BETA_TOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BETA_TOP"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-csg324
+
+---- Source Options
+Top Module Name                    : BETA_TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\SHIFT.v" into library work
+Parsing module <SHIFT>.
+Analyzing Verilog file "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\ipcore_dir\DRAM32x32.v" into library work
+Parsing module <DRAM32x32>.
+Analyzing Verilog file "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\CMP.v" into library work
+Parsing module <CMP>.
+Analyzing Verilog file "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\BOOL.v" into library work
+Parsing module <BOOL>.
+WARNING:HDLCompiler:248 - "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\BOOL.v" Line 31: Block identifier is required on this block
+Parsing module <MUX4>.
+Analyzing Verilog file "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\ARITH.v" into library work
+Parsing module <ARITH>.
+Analyzing Verilog file "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\REGFILE.v" into library work
+Parsing module <REGFILE>.
+Analyzing Verilog file "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\CTL.v" into library work
+Parsing module <CTL>.
+Analyzing Verilog file "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\ipcore_dir\MAIN_DIST_MEM.v" into library work
+Parsing module <MAIN_DIST_MEM>.
+Analyzing Verilog file "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\BETA_CORE.v" into library work
+Parsing module <BETA_CORE>.
+Analyzing Verilog file "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\BETA_TOP.v" into library work
+Parsing module <BETA_TOP>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <BETA_TOP>.
+
+Elaborating module <MAIN_DIST_MEM>.
+WARNING:HDLCompiler:1499 - "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\ipcore_dir\MAIN_DIST_MEM.v" Line 39: Empty module <MAIN_DIST_MEM> remains a black box.
+WARNING:HDLCompiler:189 - "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\BETA_TOP.v" Line 51: Size mismatch in connection of port <dpra>. Formal port size is 10-bit while actual signal size is 11-bit.
+WARNING:HDLCompiler:189 - "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\BETA_TOP.v" Line 71: Size mismatch in connection of port <dpra>. Formal port size is 10-bit while actual signal size is 11-bit.
+WARNING:HDLCompiler:1016 - "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\BETA_CORE.v" Line 94: Port Z is not connected to this instance
+
+Elaborating module <BETA_CORE>.
+
+Elaborating module <CTL>.
+
+Elaborating module <REGFILE>.
+
+Elaborating module <DRAM32x32>.
+WARNING:HDLCompiler:1499 - "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\ipcore_dir\DRAM32x32.v" Line 39: Empty module <DRAM32x32> remains a black box.
+
+Elaborating module <PC>.
+WARNING:HDLCompiler:413 - "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\PC.v" Line 38: Result of 32-bit expression is truncated to fit in 31-bit target.
+WARNING:HDLCompiler:413 - "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\PC.v" Line 42: Result of 32-bit expression is truncated to fit in 31-bit target.
+
+Elaborating module <ALU>.
+
+Elaborating module <SHIFT>.
+
+Elaborating module <BOOL>.
+
+Elaborating module <MUX4>.
+
+Elaborating module <ARITH>.
+
+Elaborating module <CMP>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <BETA_TOP>.
+    Related source file is "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\BETA_TOP.v".
+    Summary:
+	no macro.
+Unit <BETA_TOP> synthesized.
+
+Synthesizing Unit <BETA_CORE>.
+    Related source file is "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\BETA_CORE.v".
+INFO:Xst:3210 - "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\BETA_CORE.v" line 94: Output port <Z> of the instance <arithlog_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\BETA_CORE.v" line 94: Output port <V> of the instance <arithlog_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\BETA_CORE.v" line 94: Output port <N> of the instance <arithlog_unit> is unconnected or connected to loadless signal.
+    Found 32-bit 4-to-1 multiplexer for signal <regWriteData_i> created at line 110.
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <BETA_CORE> synthesized.
+
+Synthesizing Unit <CTL>.
+    Related source file is "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\CTL.v".
+    Summary:
+	inferred   6 Multiplexer(s).
+Unit <CTL> synthesized.
+
+Synthesizing Unit <REGFILE>.
+    Related source file is "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\REGFILE.v".
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <REGFILE> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\PC.v".
+WARNING:Xst:647 - Input <JT<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <PC>.
+    Found 32-bit adder for signal <PC_INC> created at line 38.
+    Found 32-bit adder for signal <PC_OFFSET> created at line 42.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\ALU.v".
+    Found 32-bit 4-to-1 multiplexer for signal <Y> created at line 42.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <SHIFT>.
+    Related source file is "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\SHIFT.v".
+    Found 32-bit shifter logical left for signal <A[31]_B[4]_shift_left_0_OUT> created at line 30
+    Found 32-bit shifter logical right for signal <A[31]_B[4]_shift_right_1_OUT> created at line 31
+    Found 32-bit shifter arithmetic right for signal <A[31]_B[4]_shift_right_2_OUT> created at line 32
+    Found 32-bit 4-to-1 multiplexer for signal <Y> created at line 29.
+    Summary:
+	inferred   1 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <SHIFT> synthesized.
+
+Synthesizing Unit <BOOL>.
+    Related source file is "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\BOOL.v".
+    Summary:
+	no macro.
+Unit <BOOL> synthesized.
+
+Synthesizing Unit <MUX4>.
+    Related source file is "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\BOOL.v".
+    Found 1-bit 4-to-1 multiplexer for signal <OUT> created at line 42.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX4> synthesized.
+
+Synthesizing Unit <ARITH>.
+    Related source file is "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\ARITH.v".
+    Found 32-bit subtractor for signal <A[31]_B[31]_sub_6_OUT> created at line 45.
+    Found 32-bit adder for signal <A[31]_B[31]_add_4_OUT> created at line 43.
+    Found 1-bit comparator equal for signal <A[31]_B[31]_equal_1_o> created at line 32
+    Found 1-bit comparator not equal for signal <n0002> created at line 32
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <ARITH> synthesized.
+
+Synthesizing Unit <CMP>.
+    Related source file is "F:\Verilog projects\BETA\BETA_ISE_WORKS\BETA_ISE\CMP.v".
+    Found 32-bit 4-to-1 multiplexer for signal <Y> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <CMP> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 1
+ 32-bit register                                       : 1
+# Comparators                                          : 2
+ 1-bit comparator equal                                : 1
+ 1-bit comparator not equal                            : 1
+# Multiplexers                                         : 49
+ 1-bit 2-to-1 multiplexer                              : 5
+ 1-bit 4-to-1 multiplexer                              : 32
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 4
+ 32-bit 4-to-1 multiplexer                             : 4
+ 5-bit 2-to-1 multiplexer                              : 2
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/MAIN_DIST_MEM.ngc>.
+Reading core <ipcore_dir/DRAM32x32.ngc>.
+Loading core <MAIN_DIST_MEM> for timing and area information for instance <data_mem>.
+Loading core <MAIN_DIST_MEM> for timing and area information for instance <instruct_mem>.
+Loading core <DRAM32x32> for timing and area information for instance <A_DIST>.
+Loading core <DRAM32x32> for timing and area information for instance <B_DIST>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 31-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Comparators                                          : 2
+ 1-bit comparator equal                                : 1
+ 1-bit comparator not equal                            : 1
+# Multiplexers                                         : 48
+ 1-bit 2-to-1 multiplexer                              : 4
+ 1-bit 4-to-1 multiplexer                              : 32
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 4
+ 32-bit 4-to-1 multiplexer                             : 4
+ 5-bit 2-to-1 multiplexer                              : 2
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <PC_0> (without init value) has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PC_1> (without init value) has a constant value of 0 in block <PC>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <BETA_TOP> ...
+
+Optimizing unit <BETA_CORE> ...
+
+Optimizing unit <REGFILE> ...
+
+Optimizing unit <PC> ...
+
+Optimizing unit <CTL> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BETA_TOP, actual ratio is 23.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : BETA_TOP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1361
+#      GND                         : 5
+#      INV                         : 2
+#      LUT1                        : 28
+#      LUT2                        : 41
+#      LUT3                        : 50
+#      LUT4                        : 50
+#      LUT5                        : 118
+#      LUT6                        : 674
+#      MUXCY                       : 87
+#      MUXF7                       : 151
+#      MUXF8                       : 64
+#      VCC                         : 1
+#      XORCY                       : 90
+# FlipFlops/Latches                : 158
+#      FD                          : 128
+#      FDRE                        : 29
+#      FDSE                        : 1
+# RAMS                             : 398
+#      RAM32M                      : 10
+#      RAM32X1D                    : 4
+#      RAM64M                      : 320
+#      RAM64X1D                    : 64
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 164
+#      IBUF                        : 2
+#      OBUF                        : 162
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             158  out of  11440     1%  
+ Number of Slice LUTs:                 2419  out of   5720    42%  
+    Number used as Logic:               963  out of   5720    16%  
+    Number used as Memory:             1456  out of   1440   101% (*) 
+       Number used as RAM:             1456
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2547
+   Number with an unused Flip Flop:    2389  out of   2547    93%  
+   Number with an unused LUT:           128  out of   2547     5%  
+   Number of fully used LUT-FF pairs:    30  out of   2547     1%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                         165
+ Number of bonded IOBs:                 165  out of    200    82%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 556   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 15.841ns (Maximum Frequency: 63.128MHz)
+   Minimum input arrival time before clock: 7.263ns
+   Maximum output required time after clock: 18.153ns
+   Maximum combinational path delay: 6.841ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 15.841ns (frequency: 63.128MHz)
+  Total number of paths / destination ports: 612870745 / 4422
+-------------------------------------------------------------------------
+Delay:               15.841ns (Levels of Logic = 20)
+  Source:            beta/prog_counter/PC_2 (FF)
+  Destination:       beta/rf/B_DIST/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram62 (RAM)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: beta/prog_counter/PC_2 to beta/rf/B_DIST/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram62
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q           514   0.447   2.090  beta/prog_counter/PC_2 (beta/prog_counter/PC_2)
+     begin scope: 'instruct_mem:dpra<0>'
+     RAM64X1D:DPRA0->DPO    1   0.205   0.827  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1752 (U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/N1037)
+     LUT6:I2->O            1   0.203   0.000  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX31_4 (U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX31_4)
+     MUXF7:I1->O           1   0.140   0.000  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX31_3_f7 (U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX31_3_f7)
+     MUXF8:I1->O          27   0.152   1.221  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX31_2_f8 (dpo<31>)
+     end scope: 'instruct_mem:dpo<31>'
+     LUT6:I5->O           12   0.205   0.909  beta/control_unit/mwr_i<5>1_1 (beta/control_unit/mwr_i<5>1)
+     LUT6:I5->O            8   0.205   0.803  beta/Mmux_aluB_i121_2 (beta/Mmux_aluB_i121_1)
+     LUT6:I5->O            4   0.205   0.912  beta/Sh1311_SW0 (N10)
+     LUT6:I3->O            1   0.205   0.000  beta/Sh1311_G (N156)
+     MUXF7:I1->O           1   0.140   0.580  beta/Sh1311 (beta/Sh1311)
+     LUT6:I5->O            1   0.205   0.580  beta/arithlog_unit/Mmux_Y613_SW0 (N12)
+     LUT6:I5->O            1   0.205   0.580  beta/arithlog_unit/Mmux_Y613 (beta/arithlog_unit/Mmux_Y612)
+     LUT6:I5->O          898   0.205   2.182  beta/arithlog_unit/Mmux_Y616 (MA_7_OBUF)
+     begin scope: 'data_mem:dpra<5>'
+     RAM64X1D:DPRA5->DPO    1   0.205   0.827  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1751 (U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/N1036)
+     LUT6:I2->O            1   0.203   0.000  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX30_4 (U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX30_4)
+     MUXF7:I1->O           1   0.140   0.000  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX30_3_f7 (U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX30_3_f7)
+     MUXF8:I1->O           3   0.152   0.651  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX30_2_f8 (dpo<30>)
+     end scope: 'data_mem:dpo<30>'
+     LUT6:I5->O            2   0.205   0.000  beta/Mmux_regWriteData_i241 (beta/regWriteData_i<30>)
+     begin scope: 'beta/rf/B_DIST:d<30>'
+     RAM32X1D:D                0.053          U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram61
+    ----------------------------------------
+    Total                     15.841ns (3.680ns logic, 12.161ns route)
+                                       (23.2% logic, 76.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 1164 / 622
+-------------------------------------------------------------------------
+Offset:              7.263ns (Levels of Logic = 5)
+  Source:            IRQ (PAD)
+  Destination:       beta/rf/B_DIST/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1 (RAM)
+  Destination Clock: CLK rising
+
+  Data Path: IRQ to beta/rf/B_DIST/U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   1.222   0.857  IRQ_IBUF (IRQ_IBUF)
+     LUT2:I1->O           63   0.205   1.998  beta/irq_i1 (beta/irq_i)
+     LUT6:I0->O           32   0.203   1.656  beta/control_unit/Mmux_WDSEL11 (beta/wdsel_i<0>)
+     LUT6:I0->O            2   0.203   0.616  beta/Mmux_regWriteData_i110 (beta/regWriteData_i<0>)
+     begin scope: 'beta/rf/B_DIST:d<0>'
+     RAM32M:DIA0               0.303          U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1
+    ----------------------------------------
+    Total                      7.263ns (2.136ns logic, 5.127ns route)
+                                       (29.4% logic, 70.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 63104885 / 160
+-------------------------------------------------------------------------
+Offset:              18.153ns (Levels of Logic = 19)
+  Source:            beta/prog_counter/PC_2 (FF)
+  Destination:       MRD<31> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: beta/prog_counter/PC_2 to MRD<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q           514   0.447   2.090  beta/prog_counter/PC_2 (beta/prog_counter/PC_2)
+     begin scope: 'instruct_mem:dpra<0>'
+     RAM64X1D:DPRA0->DPO    1   0.205   0.827  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1752 (U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/N1037)
+     LUT6:I2->O            1   0.203   0.000  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX31_4 (U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX31_4)
+     MUXF7:I1->O           1   0.140   0.000  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX31_3_f7 (U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX31_3_f7)
+     MUXF8:I1->O          27   0.152   1.221  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX31_2_f8 (dpo<31>)
+     end scope: 'instruct_mem:dpo<31>'
+     LUT6:I5->O           12   0.205   0.909  beta/control_unit/mwr_i<5>1_1 (beta/control_unit/mwr_i<5>1)
+     LUT6:I5->O            8   0.205   0.803  beta/Mmux_aluB_i121_2 (beta/Mmux_aluB_i121_1)
+     LUT6:I5->O            4   0.205   0.912  beta/Sh1311_SW0 (N10)
+     LUT6:I3->O            1   0.205   0.000  beta/Sh1311_G (N156)
+     MUXF7:I1->O           1   0.140   0.580  beta/Sh1311 (beta/Sh1311)
+     LUT6:I5->O            1   0.205   0.580  beta/arithlog_unit/Mmux_Y613_SW0 (N12)
+     LUT6:I5->O            1   0.205   0.580  beta/arithlog_unit/Mmux_Y613 (beta/arithlog_unit/Mmux_Y612)
+     LUT6:I5->O          898   0.205   2.182  beta/arithlog_unit/Mmux_Y616 (MA_7_OBUF)
+     begin scope: 'data_mem:dpra<5>'
+     RAM64X1D:DPRA5->DPO    1   0.205   0.827  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/Mram_ram1751 (U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/N1036)
+     LUT6:I2->O            1   0.203   0.000  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX30_4 (U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX30_4)
+     MUXF7:I1->O           1   0.140   0.000  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX30_3_f7 (U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX30_3_f7)
+     MUXF8:I1->O           3   0.152   0.650  U0/xst_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/inst_LPM_MUX30_2_f8 (dpo<30>)
+     end scope: 'data_mem:dpo<30>'
+     OBUF:I->O                 2.571          MRD_30_OBUF (MRD<30>)
+    ----------------------------------------
+    Total                     18.153ns (5.993ns logic, 12.160ns route)
+                                       (33.0% logic, 67.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Delay:               6.841ns (Levels of Logic = 3)
+  Source:            RESET (PAD)
+  Destination:       MWR (PAD)
+
+  Data Path: RESET to MWR
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            32   1.222   1.539  RESET_IBUF (RESET_IBUF)
+     LUT4:I0->O           33   0.203   1.305  beta/control_unit/Mmux_MWR11 (MWR_OBUF)
+     OBUF:I->O                 2.571          MWR_OBUF (MWR)
+    ----------------------------------------
+    Total                      6.841ns (3.996ns logic, 2.845ns route)
+                                       (58.4% logic, 41.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |   15.841|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.27 secs
+ 
+--> 
+
+Total memory usage is 295616 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

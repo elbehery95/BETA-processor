@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="BETA_ISE" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ALU F:|Self learning|FPGA|Projects|BETA_ISE|ALU.v</ClosedNode>
+         <ClosedNode>/BETA_CORE F:|Self learning|FPGA|Projects|BETA_ISE|BETA_CORE.v/arithlog_unit - ALU/bool_ckt - BOOL</ClosedNode>
+         <ClosedNode>/BETA_TOP F:|Self learning|FPGA|Projects|BETA_ISE|BETA_TOP.v</ClosedNode>
+         <ClosedNode>/BETA_TOP F:|Self learning|FPGA|Projects|BETA_ISE|BETA_TOP.v/beta - BETA_CORE/arithlog_unit - ALU</ClosedNode>
+         <ClosedNode>/REGFILE F:|Self learning|FPGA|Projects|BETA_ISE|REGFILE.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>instruct_mem - MAIN_DIST_MEM (F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/ipcore_dir/MAIN_DIST_MEM.xco)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000186000000020000000000000000000000000200000064ffffffff000000810000000300000002000001860000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>instruct_mem - MAIN_DIST_MEM (F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/ipcore_dir/MAIN_DIST_MEM.xco)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000191000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000000c50000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ALU.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>BETA_CORE.v</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000191000000010001000100000000000000000000000064ffffffff000000810000000000000001000001910000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>BETA_CORE.v</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_NGC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001270000007f01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/BETA_CORE F:|Self learning|FPGA|Projects|BETA_ISE|BETA_CORE.v/arithlog_unit - ALU</ClosedNode>
+         <ClosedNode>/BETA_CORE F:|Self learning|FPGA|Projects|BETA_ISE|BETA_CORE.v/rf - REGFILE</ClosedNode>
+         <ClosedNode>/REGFILE F:|Self learning|FPGA|Projects|BETA_ISE|REGFILE.v</ClosedNode>
+         <ClosedNode>/TB F:|Self learning|FPGA|Projects|BETA_ISE|TB_ALU.v</ClosedNode>
+         <ClosedNode>/TB F:|Self learning|FPGA|Projects|BETA_ISE|TB_ARITH.v</ClosedNode>
+         <ClosedNode>/TB_ALU F:|Self learning|FPGA|Projects|BETA_ISE|TB_ALU.v</ClosedNode>
+         <ClosedNode>/TB_ALU F:|Self learning|FPGA|Projects|BETA_ISE|TB_ALU.v/uut - ALU/bool_ckt - BOOL</ClosedNode>
+         <ClosedNode>/TB_ALU F:|Verilog projects|BETA|BETA_ISE_WORKS|BETA_ISE|TB_ALU.v</ClosedNode>
+         <ClosedNode>/TB_ARITH F:|Self learning|FPGA|Projects|BETA_ISE|TB_ARITH.v</ClosedNode>
+         <ClosedNode>/TB_ARITH F:|Verilog projects|BETA|BETA_ISE_WORKS|BETA_ISE|TB_ARITH.v</ClosedNode>
+         <ClosedNode>/TB_BETA F:|Self learning|FPGA|Projects|BETA_ISE|TB_BETA.v</ClosedNode>
+         <ClosedNode>/TB_BETA F:|Self learning|FPGA|Projects|BETA_ISE|TB_BETA.v/uut - BETA_TOP/beta - BETA_CORE/arithlog_unit - ALU</ClosedNode>
+         <ClosedNode>/TB_BETA F:|Self learning|FPGA|Projects|BETA_ISE|TB_BETA.v/uut - BETA_TOP/beta - BETA_CORE/rf - REGFILE</ClosedNode>
+         <ClosedNode>/TB_BETA F:|Verilog projects|BETA|BETA_ISE_WORKS|BETA_ISE|TB_BETA.v</ClosedNode>
+         <ClosedNode>/TB_BOOL F:|Self learning|FPGA|Projects|BETA_ISE|TB_BOOL.v</ClosedNode>
+         <ClosedNode>/TB_BOOL F:|Verilog projects|BETA|BETA_ISE_WORKS|BETA_ISE|TB_BOOL.v</ClosedNode>
+         <ClosedNode>/TB_CMP F:|Self learning|FPGA|Projects|BETA_ISE|TB_CMP.v</ClosedNode>
+         <ClosedNode>/TB_CMP F:|Verilog projects|BETA|BETA_ISE_WORKS|BETA_ISE|TB_CMP.v</ClosedNode>
+         <ClosedNode>/TB_CTL F:|Self learning|FPGA|Projects|BETA_ISE|TB_CTL.v</ClosedNode>
+         <ClosedNode>/TB_CTL F:|Verilog projects|BETA|BETA_ISE_WORKS|BETA_ISE|TB_CTL.v</ClosedNode>
+         <ClosedNode>/TB_PC F:|Self learning|FPGA|Projects|BETA_ISE|TB_PC.v</ClosedNode>
+         <ClosedNode>/TB_PC F:|Verilog projects|BETA|BETA_ISE_WORKS|BETA_ISE|TB_PC.v</ClosedNode>
+         <ClosedNode>/TB_REGFILE F:|Self learning|FPGA|Projects|BETA_ISE|TB_REGFILE.v</ClosedNode>
+         <ClosedNode>/TB_REGFILE F:|Verilog projects|BETA|BETA_ISE_WORKS|BETA_ISE|TB_REGFILE.v</ClosedNode>
+         <ClosedNode>/TB_SHIFT F:|Self learning|FPGA|Projects|BETA_ISE|TB_SHIFT.v</ClosedNode>
+         <ClosedNode>/TB_SHIFT F:|Verilog projects|BETA|BETA_ISE_WORKS|BETA_ISE|TB_SHIFT.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>TB_BETA (F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/TB_BETA.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000d2000000020000000000000000000000000200000064ffffffff000000810000000300000002000000d20000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>TB_BETA (F:/Verilog projects/BETA/BETA_ISE_WORKS/BETA_ISE/TB_BETA.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>View HDL Instantiation Template</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000191000000010000000100000000000000000000000064ffffffff000000810000000000000001000001910000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>View HDL Instantiation Template</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

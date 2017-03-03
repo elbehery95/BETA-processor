@@ -1,0 +1,55 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'BETA_TOP'
+
+Design Information
+------------------
+Command Line   : map -filter "F:/Verilog
+projects/BETA/BETA_ISE_WORKS/BETA_ISE/iseconfig/filter.filter" -intstyle ise -p
+xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off
+-r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o
+BETA_TOP_map.ncd BETA_TOP.ngd BETA_TOP.pcf 
+Target Device  : xc6slx9
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Thu Mar 02 22:10:53 2017
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 9 secs 
+Total CPU  time at the beginning of Placer: 6 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:bba855) REAL time: 10 secs 
+
+Phase 2.7  Design Feasibility Check
+ERROR:Place:836 - Not enough free sites available for the components of the
+   following type(s).
+      LUTM   	Number of Components 2904   	Number of Sites 2880
+
+ERROR:Place:375 - The design does not fit in device.
+    Total LUT Utilization      : 4764 out of 11440
+    LUTs used as Logic         : 1860
+    LUTs used as Memory        : 2904
+    FF Utilization             : 30 out of 11440
+
+
+Phase 2.7  Design Feasibility Check (Checksum:bba855) REAL time: 10 secs 
+
+Total REAL time to Placer completion: 10 secs 
+Total CPU  time to Placer completion: 7 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+
+Mapping completed.
+See MAP report file "BETA_TOP_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   3
+Number of warnings :   0
